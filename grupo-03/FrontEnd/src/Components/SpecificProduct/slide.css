@@ -1,0 +1,10 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

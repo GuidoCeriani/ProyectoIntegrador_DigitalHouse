@@ -1,0 +1,16 @@
+stages:
+  - triggers
+
+trigger_front:
+  stage: triggers
+  trigger:
+    include: FrontEnd/.gitlab-ci.yml
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'infra/pipelines'
+
+trigger_back:
+  stage: triggers
+  trigger:
+    include: BackEnd/.gitlab-ci.yml
+  rules:
+    - if: $CI_COMMIT_BRANCH == 'infra/pipelines'

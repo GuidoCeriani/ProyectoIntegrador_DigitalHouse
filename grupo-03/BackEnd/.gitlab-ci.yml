@@ -1,0 +1,42 @@
+stages:
+  - build
+  - test
+  - docker-build
+
+build:
+  stage: build
+  image: maven:3.6.3-jdk-11-slim
+  script:
+    - ls 
+    - cd BackEnd
+    - echo "Start building App"
+    - mvn clean install -Dspring.profiles.active=$SPRING_ACTIVE_PROFILE && mvn package -B -e -Dspring.profiles.active=$SPRING_ACTIVE_PROFILE
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - BackEnd/target/*.jar
+
+test:
+  stage: test
+  needs: [build]
+  image: maven:3-jdk-11-slim
+  script: 
+  - cd BackEnd
+  - "mvn test"
+  artifacts:
+    paths:
+      - BackEnd/target/*.jar
+
+docker-build:
+  stage: docker-build
+  needs: [test]
+  image: docker:latest
+  services: 
+    - name: docker:19.03.8-dind
+  before_script:
+    - cd BackEnd
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE"/backend .
+    - docker push "$CI_REGISTRY_IMAGE"/backend
+    - echo "Registry image:" $CI_REGISTRY_IMAGE/backend

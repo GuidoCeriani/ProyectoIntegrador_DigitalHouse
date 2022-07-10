@@ -1,0 +1,15 @@
+{
+  "name": "integrador",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gl.deitech.online/ctd/proyecto-integrador-0522/0821-c1/grupo-03.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

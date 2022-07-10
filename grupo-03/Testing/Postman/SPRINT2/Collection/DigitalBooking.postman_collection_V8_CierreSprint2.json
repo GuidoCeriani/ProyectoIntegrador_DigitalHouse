@@ -1,0 +1,5737 @@
+{
+	"info": {
+		"_postman_id": "29f31391-21c3-4899-b17c-21c7131b2de1",
+		"name": "DigitalBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "createCategory",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});",
+									"",
+									"",
+									"",
+									"//postman.setNextRequest(\"getCategoryById\");"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"CATEGORÍA DE MUESTRA\",\n    \"quantity\": \"{{$randomInt}}\",\n    \"image\": \"https://images.unsplash.com/photo-1564865878688-9a244444042a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCategory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Casa\",\n    \"quantity\": \"4\",\n    \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/categories",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/categories/a522b08d-6185-4781-9c13-117dab62a1e4"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:39:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "createCategory",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Casa\",\n    \"quantity\": \"4\",\n    \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/categories",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=4AE81F53645DC7C9DC61F4D57A7FA53C; Path=/; HttpOnly"
+								},
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/categories/cd11f507-e573-4c22-8ffe-3093421af576"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 05 Jun 2022 07:31:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "getListCategories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"//const dataJson = pm.response.json();",
+									"//console.log(dataJson);",
+									"const idCategory = pm.response.json()[0].id;",
+									"console.log(idCategory);",
+									"",
+									"",
+									"pm.collectionVariables.set(\"idCategory\", idCategory);",
+									"console.log(pm.collectionVariables.get(\"idCategory\"));",
+									"",
+									"",
+									"",
+									"pm.collectionVariables.set(\"title\", pm.response.json()[0].title)",
+									"const title = pm.collectionVariables.get(\"title\");",
+									"",
+									"",
+									"pm.test(\"Response JSON value check\", function () {",
+									"    const jsonData = pm.response.json()[0];",
+									"    pm.expect(jsonData.title).to.eql(title);",
+									"});",
+									"",
+									"",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getListCategories",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:39:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"0eff9e8a-00cb-4917-85df-aa1f07b6ae4b\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"18232fae-6b3c-4443-8e06-f2ad0f3bbad3\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"41a2aff3-7471-4c2e-bda7-650c8e8fbcbe\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"55f3d582-3381-4d45-b0d0-43b49f85dc32\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"9960e6e7-88b5-4572-b51d-0a70d1d09a9b\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"a2bab323-040c-400f-a2ad-f717c9817bcc\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"a522b08d-6185-4781-9c13-117dab62a1e4\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"a8d70d75-7291-47f9-b9f3-ae15e6b29d25\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"d506c3e1-f280-4689-8cab-e77489bb0d39\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    {\n        \"id\": \"fca0de53-faea-460b-afd1-9284cfc9a14d\",\n        \"title\": \"Hotel\",\n        \"quantity\": \"5\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getCategoryById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CATEGORY - GetById - Status Code\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories/:idCategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":idCategory"
+							],
+							"variable": [
+								{
+									"key": "idCategory",
+									"value": "{{idCategory}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCategoryById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories/fca0de53-faea-460b-afd1-9284cfc9a14d",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories",
+										"fca0de53-faea-460b-afd1-9284cfc9a14d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:39:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"fca0de53-faea-460b-afd1-9284cfc9a14d\",\n    \"title\": \"Hotel\",\n    \"quantity\": \"5\",\n    \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}"
+						},
+						{
+							"name": "getCategoryByIdNotFound",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories/0309ba1c-b766-429e-8a8b-176c8380586",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories",
+										"0309ba1c-b766-429e-8a8b-176c8380586"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:01:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Category not found for id 0309ba1c-b766-429e-8a8b-0176c8380586"
+						}
+					]
+				},
+				{
+					"name": "getCategoryById Set",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CATEGORY - Status Code\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404]);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCategory = \"085e7b9a-9b36-4772-a157-b17a76344090\";",
+									"pm.variables.set(\"idCategory\", idCategory);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories/:idCategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":idCategory"
+							],
+							"variable": [
+								{
+									"key": "idCategory",
+									"value": "{{idCategory}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCategoryById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories/fca0de53-faea-460b-afd1-9284cfc9a14d",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories",
+										"fca0de53-faea-460b-afd1-9284cfc9a14d"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:39:53 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"fca0de53-faea-460b-afd1-9284cfc9a14d\",\n    \"title\": \"Hotel\",\n    \"quantity\": \"5\",\n    \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}"
+						},
+						{
+							"name": "getCategoryByIdNotFound",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories/0309ba1c-b766-429e-8a8b-176c8380586",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories",
+										"0309ba1c-b766-429e-8a8b-176c8380586"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:01:11 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Category not found for id 0309ba1c-b766-429e-8a8b-0176c8380586"
+						}
+					]
+				},
+				{
+					"name": "updateCategory",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"{{idCategory}}\",\n        \"title\": \"Hotel\",\n        \"quantity\": \"7\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateCategory",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"fca0de53-faea-460b-afd1-9284cfc9a14d\",\n        \"title\": \"Hotel\",\n        \"quantity\": \"3\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/categories",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:40:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "updateCategory Asoc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let idCategory = \"284c6b22-9890-4ce1-9b18-8394d76629df\";",
+									"pm.variables.set(\"idCategory\", idCategory);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"id\": \"{{idCategory}}\",\n        \"title\": \"HOTEL\",\n        \"quantity\": \"5\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/categories",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateCategory",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"fca0de53-faea-460b-afd1-9284cfc9a14d\",\n        \"title\": \"Hotel\",\n        \"quantity\": \"3\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/categories",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:40:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteCategory",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CATEGORY - Status Code\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404]);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"cannot deleted\" || \"not found\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCategory = \"ab518caa-ce4f-4345-ac39-4462483c096d\";",
+									"pm.variables.set(\"idCategory\", idCategory);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/:idCategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":idCategory"
+							],
+							"variable": [
+								{
+									"key": "idCategory",
+									"value": "{{idCategory}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteCategory",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/categories/a8d70d75-7291-47f9-b9f3-ae15e6b29d25",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"categories",
+										"a8d70d75-7291-47f9-b9f3-ae15e6b29d25"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:40:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteCategory Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Category not found\", function () {",
+									"    pm.response.to.have.body(\"Category not found for id \" + pm.variables.get(\"idCategory\"));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCategory = \"ab518caa-ce4f-4345-ac39-4462483c096d\";",
+									"pm.variables.set(\"idCategory\", idCategory);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/categories/:idCategory",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"categories",
+								":idCategory"
+							],
+							"variable": [
+								{
+									"key": "idCategory",
+									"value": "{{idCategory}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"//console.log(pm.collectionVariables.get(\"title\"))",
+							"",
+							"console.log(\"CATEGORY\")"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"CATEGORY Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202, 204, 404]);",
+							"});",
+							"",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "createCity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{$randomCity}}\",\n    \"province\": \"Provincia\",\n    \"country\": \"{{$randomCountry}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createCity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Capital\",\n    \"province\": \"Buenos Aires\",\n    \"country\": \"Argentina\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/cities/b90b174c-a422-4e94-b097-24d4a28b85d8"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:42:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getListCities",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"const dataJson = pm.response.json();",
+									"console.log(dataJson);",
+									"const idCity = pm.response.json()[0].id;",
+									"console.log(idCity);",
+									"",
+									"pm.collectionVariables.set(\"idCity\", idCity);",
+									"console.log(pm.collectionVariables.get(\"idCity\"));",
+									"",
+									"pm.collectionVariables.set(\"nameCity\", pm.response.json()[0].name)",
+									"const nameCity = pm.collectionVariables.get(\"nameCity\");",
+									"",
+									"",
+									"pm.test(\"Response JSON value check\", function () {",
+									"    const jsonData = pm.response.json()[0];",
+									"    pm.expect(jsonData.name).to.eql(nameCity);",
+									"});",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getListCities",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:41:54 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n        \"name\": \"Malargue\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    },\n    {\n        \"id\": \"493d108b-1439-4a9d-8e3f-6d6bfa47d408\",\n        \"name\": \"Capital\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    },\n    {\n        \"id\": \"a0c60233-d9b0-4625-831d-52a335d158ec\",\n        \"name\": \"Capital\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getCityById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities/:idCity",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								":idCity"
+							],
+							"variable": [
+								{
+									"key": "idCity",
+									"value": "{{idCity}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getCityById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/cities/3e963768-b96b-4496-8caa-2874b036208f",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"3e963768-b96b-4496-8caa-2874b036208f"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:42:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n    \"name\": \"Malargue\",\n    \"province\": \"Mendoza\",\n    \"country\": \"Argentina\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updateCity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"PUT Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\n        \"id\": \"{{idCity}}\",\n        \"name\": \"Capital\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateCity",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\n        \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n        \"name\": \"Malargue\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:43:35 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteCity",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CITY - Status Code\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404]);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"cannot deleted\" || \"not found\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities/:idCity",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								":idCity"
+							],
+							"variable": [
+								{
+									"key": "idCity",
+									"value": "{{idCity}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteCity",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities/a0c60233-d9b0-4625-831d-52a335d158ec",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"a0c60233-d9b0-4625-831d-52a335d158ec"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:44:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteCity Set",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CITY - Status Code\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404]);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"cannot deleted\" || \"not found\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCity = \"1e396062-a5ba-41cd-9167-02694a013785\";",
+									"pm.variables.set(\"idCity\", idCity);",
+									"",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities/:idCity",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								":idCity"
+							],
+							"variable": [
+								{
+									"key": "idCity",
+									"value": "{{idCity}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCity No Asoc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"CITY - Status Code\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204, 404]);",
+									"});",
+									"",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"City not found\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCity = \"bc1ebdf7-bc68-4eda-8bf6-499246450aa0\";",
+									"pm.variables.set(\"idCity\", idCity);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/cities/:idCity",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cities",
+								":idCity"
+							],
+							"variable": [
+								{
+									"key": "idCity",
+									"value": "{{idCity}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteCity",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/cities/a0c60233-d9b0-4625-831d-52a335d158ec",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"cities",
+										"a0c60233-d9b0-4625-831d-52a335d158ec"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:44:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"CITY Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202, 204, 404]);",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Feature",
+			"item": [
+				{
+					"name": "createFeature",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{$randomNoun}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/features",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"features"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createFeature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Balcón\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/features",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/features/b485a13f-3b56-416b-a4f6-46937ae7f7e2"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 04:07:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "createFeature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"WI FI\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/features",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/features/da1ceb0f-77f5-47a6-a689-bfb36293bbd6"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 06:26:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "createFeature Icon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Pileta\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/features",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"features"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createFeature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"Balcón\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/features",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/features/b485a13f-3b56-416b-a4f6-46937ae7f7e2"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 04:07:07 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "createFeature",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"WI FI\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/features",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/features/da1ceb0f-77f5-47a6-a689-bfb36293bbd6"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 06:26:23 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "getListFeatures",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"const dataJson = pm.response.json();",
+									"console.log(dataJson);",
+									"",
+									"const idFeature = pm.response.json()[0].id;",
+									"console.log(idFeature);",
+									"",
+									"pm.collectionVariables.set(\"idFeature\", idFeature);",
+									"console.log(pm.collectionVariables.get(\"idFeature\"));",
+									"",
+									"pm.collectionVariables.set(\"nameFeature\", pm.response.json()[0].name)",
+									"const nameFeature = pm.collectionVariables.get(\"nameFeature\");",
+									"",
+									"",
+									"pm.test(\"Response JSON value check - FEATURE NAME\", function () {",
+									"    const jsonData = pm.response.json()[0];",
+									"    pm.expect(jsonData.name).to.eql(nameFeature);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/features",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"features"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getListFeatures",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/features",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 04:07:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"38d6067c-c362-44d2-ba01-e2e75e032a4a\",\n        \"name\": \"Wi Fi\"\n    },\n    {\n        \"id\": \"b485a13f-3b56-416b-a4f6-46937ae7f7e2\",\n        \"name\": \"Balcón\"\n    },\n    {\n        \"id\": \"f88516d8-a872-49e2-8fc1-2e4254c04649\",\n        \"name\": \"TV\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getFeatureById VER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"//Busca match toda la respuesta",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.name).to.eql(pm.variables.replaceIn(name));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const name = pm.variables.replaceIn(\"{{$name}}\");",
+									"pm.variables.set(\"name\", name);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/features/:idFeature",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"features",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idFeature",
+									"value": "{{idFeature}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getFeatureById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/features/f88516d8-a872-49e2-8fc1-2e4254c04649",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features",
+										"f88516d8-a872-49e2-8fc1-2e4254c04649"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 03:58:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"f88516d8-a872-49e2-8fc1-2e4254c04649\",\n    \"name\": \"TV\"\n}"
+						},
+						{
+							"name": "getFeatureById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/features/f88516d8-a872-49e2-8fc1-2e4254c04649",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"features",
+										"f88516d8-a872-49e2-8fc1-2e4254c04649"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 03:58:00 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"f88516d8-a872-49e2-8fc1-2e4254c04649\",\n    \"name\": \"TV\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updateFeature",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{idFeature}}\",\n    \"name\": \"OTRA COSA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/features",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"features"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFeatures",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204 - NO CONTENT\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/features/:idFeature",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"features",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idFeature",
+									"value": "{{idFeature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteFeature Not exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Feature not found\", function () {",
+									"    pm.response.to.have.body(\"Feature not found for id \" + pm.variables.get(\"idFeature\"));",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idFeature = \"75561ab9-dccf-40cc-97f3-0932c6f523a0\";",
+									"pm.variables.set(\"idFeature\", idFeature);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/features/:idFeature",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"features",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idFeature",
+									"value": "{{idFeature}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"FEATURE Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202, 204, 404]);",
+							"});"
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "createProduct",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idCity = \"47c12265-ebb2-4ede-bad4-ff2c7f1d69af\";",
+									"const idCategory = \"028b1482-3fe5-419e-b4ee-3fc9eb403954\";",
+									"",
+									"pm.variables.set(\"idCity\", idCity);",
+									"pm.variables.set(\"idCategory\", idCategory);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Hotel Metropolitano\",\n    \"description_title\": \"Hotel Metropolitano\",\n    \"description\": \"{{$randomLoremSentence}}\",\n    \"availability\": \"si\",\n    \"policy\": \"ninguna\",\n    \"cityDTO\": { \"id\": \"{{idCity}}\"},\n    \"categoryDTO\": { \"id\": \"{{idCategory}}\"},\n    \"imageDTOS\": [],\n    \"featureDTOS\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "createProduct",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"BLA Para borrar otra vez\",\n    \"description_title\": \"description title\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"city\": { \"id\": \"{{idCity}}\"},\n    \"category\": { \"id\": \"{{idCategory}}\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/products/1ea218ce-552c-42b3-b504-6d394e26a313"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:47:21 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "createProductToDelete",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"description\": \"Para borrar\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"city\": { \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\"},\n    \"category\": { \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\"}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Location",
+									"value": "http://localhost:8080/products/854e8066-211e-41cc-8099-60abd877e888"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:05:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "getListProducts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"const dataJson = pm.response.json();",
+									"console.log(dataJson);",
+									"",
+									"const idProduct = pm.response.json()[0].id;",
+									"console.log(idProduct);",
+									"",
+									"",
+									"pm.collectionVariables.set(\"idProduct\", idProduct);",
+									"console.log(pm.collectionVariables.get(\"idProduct\"));",
+									"",
+									"const idProduct1 = pm.response.json()[1].id;",
+									"pm.collectionVariables.set(\"idProduct1\", idProduct1);",
+									"",
+									"",
+									"console.log(\"CITY\")",
+									"pm.collectionVariables.set(\"nameCity\", pm.response.json()[0].cityDTO.name)",
+									"const nameCity = pm.collectionVariables.get(\"nameCity\");",
+									"console.log(nameCity)",
+									"",
+									"",
+									"console.log(\"DESCRIPTION\")",
+									"pm.collectionVariables.set(\"description\", pm.response.json()[0].description)",
+									"const description = pm.collectionVariables.get(\"description\");",
+									"console.log(description)",
+									"",
+									"pm.test(\"Response JSON value check\", function () {",
+									"    const jsonData = pm.response.json()[0];",
+									"    pm.expect(jsonData.description).to.eql(description);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getListProducts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:53:50 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"03718f15-a391-4987-bbd6-1071c4e49a98\",\n        \"description\": \"Producto C\",\n        \"availability\": \"no\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    },\n    {\n        \"id\": \"1ea218ce-552c-42b3-b504-6d394e26a313\",\n        \"description\": \"Producto A\",\n        \"availability\": \"si\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    },\n    {\n        \"id\": \"50b0ea41-a6e4-4686-beea-0ce46ac202c4\",\n        \"description\": \"Producto B\",\n        \"availability\": \"si\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    },\n    {\n        \"id\": \"ba6cfefe-619a-45bf-a45b-6ddfc96a0020\",\n        \"description\": \"Producto C\",\n        \"availability\": \"no\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    }\n]"
+						},
+						{
+							"name": "getListProducts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:05:55 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"03718f15-a391-4987-bbd6-1071c4e49a98\",\n        \"description\": \"Producto C\",\n        \"availability\": \"no\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    },\n    {\n        \"id\": \"854e8066-211e-41cc-8099-60abd877e888\",\n        \"description\": \"Para borrar\",\n        \"availability\": \"no\",\n        \"policy\": \"ninguna\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    },\n    {\n        \"id\": \"ba6cfefe-619a-45bf-a45b-6ddfc96a0020\",\n        \"description\": \"Producto ZZ\",\n        \"availability\": \"no\",\n        \"policy\": \"Podes traer tu mascota\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Malargue\",\n            \"province\": \"Mendoza\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getProductsById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/:idProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "1d647ba1-48f9-450f-a1c4-ac46d3457b51"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getProductsById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/:idProduct",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct",
+											"value": "{{idProduct}}"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 07:28:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"2fdc0e9d-0c7b-4510-acba-29031aa4a06a\",\n    \"title\": \"Hostal\",\n    \"description_title\": \"Hermosa cabaña frente al mar\",\n    \"description\": \"Hermosa cabaña frente al mar para disrutar de tus mejores vacaciones\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"cityDTO\": {\n        \"id\": \"1e554fcc-c0fb-4ee5-a328-d89a91a13fb4\",\n        \"name\": \"Capital\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    },\n    \"categoryDTO\": {\n        \"id\": \"2e3e53f7-764c-40aa-89f5-2eed0bd2380e\",\n        \"title\": \"CATEGORIA ASOCIADA\",\n        \"quantity\": \"5\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    \"imageDTOS\": [\n        {\n            \"id\": \"e8a81fa6-71df-45e8-a431-5e22f94c3e86\",\n            \"title\": null,\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\"\n        },\n        {\n            \"id\": \"f8463297-899d-4181-b282-6ce73ebf798e\",\n            \"title\": null,\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\"\n        },\n        {\n            \"id\": \"edd2e27b-bf10-4851-8911-26de18db36a3\",\n            \"title\": null,\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\"\n        },\n        {\n            \"id\": \"e94abd13-b6e2-4dde-b565-fc18b1cb35a7\",\n            \"title\": null,\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\"\n        },\n        {\n            \"id\": \"d681fbb4-2843-4d40-88fa-7249e5fe9201\",\n            \"title\": null,\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\"\n        }\n    ],\n    \"featureDTOS\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "getProductosByCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products?city={{nameCity}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "city",
+									"value": "{{nameCity}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getProductosByCategory",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products?category=hoteles",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "hoteles"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProduct",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"id\": \"{{idProduct}}\",\n    \"title\": \"CAMBIANDO TITULO PRODUCTO\",\n    \"description_title\": \"Hermosa cabaña frente al mar\",\n    \"description\": \"Hermosa cabaña frente al mar para disrutar de tus mejores vacaciones\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"cityDTO\": { \"id\": \"{{idCity}}\"},\n    \"categoryDTO\": { \"id\": \"{{idCategory}}\"},\n    \"imageDTOS\": [],\n    \"featureDTOS\": []\n    \n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"ba6cfefe-619a-45bf-a45b-6ddfc96a0020\",\n        \"description\": \"Producto ZZ\",\n        \"availability\": \"no\",\n        \"policy\": \"Podes traer tu mascota\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Villa Mercedes\",\n            \"province\": \"San Luis\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:58:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "updateProductVbles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{idProduct}}\",\n    \"description\": \"POR FIN\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"cityDTO\": {\n        \"id\": \"{{idCity}}\",\n        \"name\": \"Malargue\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    },\n    \"categoryDTO\": {\n        \"id\": \"{{idCategory}}\",\n        \"title\": \"Casa\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    \"imageDTOS\": [\n        {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{idProduct}}\"}\n        },\n        {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{idProduct}}\"}\n        },\n                {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{idProduct}}\"}\n        },\n                {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{idProduct}}\"}\n        }\n    ],\n    \"featureDTOS\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"ba6cfefe-619a-45bf-a45b-6ddfc96a0020\",\n        \"description\": \"Producto ZZ\",\n        \"availability\": \"no\",\n        \"policy\": \"Podes traer tu mascota\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Villa Mercedes\",\n            \"province\": \"San Luis\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:58:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "updateProductNoVbles",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful PUT request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([204]);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const prod = pm.variables.set(\"prod\", \"5fa3012f-7905-4ae6-8971-08a5ac93f657\");"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "     {\n        \"id\": \"5fa3012f-7905-4ae6-8971-08a5ac93f657\",\n        \"title\": \"HOTEL CABA\",\n        \"description_title\": \"Rerum autem dolorem\",\n        \"description\": \"Rerum autem dolorem. Placeat et laudantium voluptas nam sint quidem dolor. Ipsum sit aut temporibus tenetur possimus et dolorem ut. Commodi incidunt harum placeat corporis aut. Quia est doloribus commodi rerum doloremque. Quia est magnam maiores saepe quam.\",\n        \"availability\": \"SI\",\n        \"policy\": \"ninguna\",\n        \"cityDTO\": {\n            \"id\": \"47c12265-ebb2-4ede-bad4-ff2c7f1d69af\",\n            \"name\": \"CABA\",\n            \"province\": \"Buenos Aires\",\n            \"country\": \"Argentina\"\n        },\n        \"categoryDTO\": {\n            \"id\": \"028b1482-3fe5-419e-b4ee-3fc9eb403954\",\n            \"title\": \"Hoteles\",\n            \"quantity\": \"693\",\n            \"image\": \"https://images.unsplash.com/photo-1606046604972-77cc76aee944?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80\"\n        },\n        \"imageDTOS\": [],\n        \"featureDTOS\": [\n            {\n                \"id\": \"3463f750-d64f-4cd9-8d62-3302c91016ef\",\n                \"name\": \"Pileta\"\n            },\n            {\n                \"id\": \"5b490c54-d4f0-48ce-a869-8b86bf1fe2ba\",\n                \"name\": \"Wifi\"\n            },\n            {\n                \"id\": \"734067bc-b6e3-4a51-9340-3590c50d5379\",\n                \"name\": \"Aire acondicionado\"\n            },\n            {\n                \"id\": \"57a7cf89-0dba-4356-85ec-65e1bb2f095b\",\n                \"name\": \"Apto mascotas\"\n            },\n            {\n                \"id\": \"036831eb-2f6e-4a50-8e77-05d0650fa482\",\n                \"name\": \"Televisor\"\n            }\n        ]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateProduct",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n        \"id\": \"ba6cfefe-619a-45bf-a45b-6ddfc96a0020\",\n        \"description\": \"Producto ZZ\",\n        \"availability\": \"no\",\n        \"policy\": \"Podes traer tu mascota\",\n        \"city\": {\n            \"id\": \"3e963768-b96b-4496-8caa-2874b036208f\",\n            \"name\": \"Villa Mercedes\",\n            \"province\": \"San Luis\",\n            \"country\": \"Argentina\"\n        },\n        \"category\": {\n            \"id\": \"0309ba1c-b766-429e-8a8b-176c8380586d\",\n            \"title\": \"Casa\",\n            \"quantity\": \"4\",\n            \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n        },\n        \"images\": [],\n        \"features\": []\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 06:58:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "updateProductNoVbles",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"id\": \"{{prod}}\",\n    \"description\": \"POR FIN\",\n    \"availability\": \"no\",\n    \"policy\": \"ninguna\",\n    \"cityDTO\": {\n        \"id\": \"0a1d2a9d-b3ba-49e6-8bcb-36b8409b3a75\",\n        \"name\": \"Malargue\",\n        \"province\": \"Mendoza\",\n        \"country\": \"Argentina\"\n    },\n    \"categoryDTO\": {\n        \"id\": \"{{idCategory}}\",\n        \"title\": \"BLA\",\n        \"quantity\": \"4\",\n        \"image\": \"https://unsplash.com/es/fotos/g5ZIXjzRGds\"\n    },\n    \"imageDTOS\": [\n        {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{prod}}\"}\n        },\n        {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{idProduct}}\"}\n        },\n                {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{prod}}\"}\n        },\n                {\n            \"id\": \"{{idImage}}\",\n            \"title\": \"Imagen 1\",\n            \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n            \"productDTO\": {\"id\": \"{{prod}}\"}\n        }\n    ],\n    \"featureDTOS\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 08:03:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "deleteProduct",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Delete producto que no contiene features ni img",
+									"//const idProduct = \"f64b65b9-c355-4534-ade3-a853eca7cc07\";",
+									"//pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/:idProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteProduct",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/50b0ea41-a6e4-4686-beea-0ce46ac202c4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"50b0ea41-a6e4-4686-beea-0ce46ac202c4"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:00:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteProduct con Feature sin img",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Delete producto que contiene features sin img",
+									"const idProduct = \"58600363-0965-4991-9860-e0eae57a6026\";",
+									"pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/:idProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteProduct",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/50b0ea41-a6e4-4686-beea-0ce46ac202c4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"50b0ea41-a6e4-4686-beea-0ce46ac202c4"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:00:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "deleteProduct with Img",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idProduct = \"f62ea95b-c4a8-4ad5-b5f0-66f1924613b3\";",
+									"pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/:idProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteProduct",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/50b0ea41-a6e4-4686-beea-0ce46ac202c4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										"50b0ea41-a6e4-4686-beea-0ce46ac202c4"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 02 Jun 2022 07:00:19 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "deleteProduct with Img",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/products/:idProduct",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"products",
+										":idProduct"
+									],
+									"variable": [
+										{
+											"key": "idProduct",
+											"value": "{{idProduct}}"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 12:43:57 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Product not found for id c4dca611-58e4-4a5b-918d-372c732a3f4c"
+						}
+					]
+				},
+				{
+					"name": "deleteProduct Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Product not found\", function () {",
+									"    pm.response.to.have.body(\"Product not found for id \" + pm.variables.get(\"idProduct\"));",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idProduct = \"06237eee-3ed7-4c0a-abcf-f605ff13dea9\";",
+									"pm.variables.set(\"idProduct\", idProduct);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/products/:idProduct",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateFeature Feature Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Feature added. Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idProduct = \"4318251c-d6db-4311-9f2f-88d5f60bf71a\";",
+									"pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									"const idFeature = \"a6e6f007-d423-41df-92c8-f930c770406f\";",
+									"pm.variables.set(\"idFeature\", idFeature);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/:idProduct/link/:idFeature",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct",
+								"link",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								},
+								{
+									"key": "idFeature",
+									"value": "{{idFeature}}",
+									"description": "Id existente"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateFeature Feature Exist",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products/:idProduct/link/:idFeature",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										":idProduct",
+										"link",
+										":idFeature"
+									],
+									"variable": [
+										{
+											"key": "idProduct",
+											"value": "{{idProduct}}"
+										},
+										{
+											"key": "idFeature",
+											"value": "{{idFeature}}",
+											"description": "Id existente"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jun 2022 00:54:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "updateFeature NotFound",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"This product don't have this feature. Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/{{idProduct}}/link/:idFeature",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								"{{idProduct}}",
+								"link",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idFeature",
+									"value": "f878aadc-132f-4bc2-ab16-f2177e11375",
+									"description": "Este es un id que no existe"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateFeature NotFound",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products/{{idProduct}}/:idFeature",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										"{{idProduct}}",
+										":idFeature"
+									],
+									"variable": [
+										{
+											"key": "idFeature",
+											"value": "f878aadc-132f-4bc2-ab16-f2177e11375"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "61"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 00:35:18 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Feature not found for id f878aadc-132f-4bc2-ab16-0f2177e11375"
+						}
+					]
+				},
+				{
+					"name": "updateFeature Unlink",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idProduct = \"4318251c-d6db-4311-9f2f-88d5f60bf71a\";",
+									"pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									"const idFeature = \"54253343-66fc-42f1-ab3c-e3eef1a963bc\";",
+									"pm.variables.set(\"idFeature\", idFeature);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/products/:idProduct/unlink/:idFeature",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"products",
+								":idProduct",
+								"unlink",
+								":idFeature"
+							],
+							"variable": [
+								{
+									"key": "idProduct",
+									"value": "{{idProduct}}"
+								},
+								{
+									"key": "idFeature",
+									"value": "{{idFeature}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updateFeature Unlink",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/products/:idProduct/unlink/:idFeature",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"products",
+										":idProduct",
+										"unlink",
+										":idFeature"
+									],
+									"variable": [
+										{
+											"key": "idProduct",
+											"value": "{{idProduct}}"
+										},
+										{
+											"key": "idFeature",
+											"value": "{{idFeature}}"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jun 2022 00:20:24 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"PRODUCT Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202, 204, 404]);",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "createImage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Successful POST request\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idProduct = \"4318251c-d6db-4311-9f2f-88d5f60bf71a\";",
+									"pm.variables.set(\"idProduct\", idProduct);",
+									"",
+									"",
+									"",
+									"//const url = \"https://www.milansuitehotel.com/assets/components/phpthumbof/cache/Naked_Rooms_05.d6c97cda903d7c5dec8249438aec153f.jpg\";",
+									"//const url = \"https://images.pexels.com/photos/2725675/pexels-photo-2725675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\";",
+									"//const url = \"https://images.pexels.com/photos/1148927/pexels-photo-1148927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\";",
+									"//const url = \"https://images.pexels.com/photos/545046/pexels-photo-545046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\";",
+									"//const url = \"https://images.pexels.com/photos/3144580/pexels-photo-3144580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\";",
+									"//const url = \"https://images.pexels.com/photos/545046/pexels-photo-545046.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\";",
+									"",
+									"pm.variables.set(\"urlImage\", url);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Imagen\",\n    \"url\": \"{{urlImage}}\",\n    \"productDTO\": {\"id\": \"{{idProduct}}\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getListImages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"const dataJson = pm.response.json();",
+									"console.log(dataJson);",
+									"",
+									"",
+									"const idImage = pm.response.json()[0].id;",
+									"//console.log(idImage);",
+									"",
+									"pm.collectionVariables.set(\"idImage\", idImage);",
+									"//console.log(pm.collectionVariables.get(\"idImage\"));",
+									"",
+									"const idImage1 = pm.response.json()[1].id;",
+									"pm.collectionVariables.set(\"idImage1\", idImage1);",
+									"",
+									"const idImage2 = pm.response.json()[2].id;",
+									"pm.collectionVariables.set(\"idImage2\", idImage2);",
+									"",
+									"",
+									"",
+									"//pm.collectionVariables.set(\"titleImage\", pm.response.json()[0].title)",
+									"//const titleImage = pm.collectionVariables.get(\"titleImage\");",
+									"",
+									"/*",
+									"pm.test(\"Response JSON value check\", function () {",
+									"    const jsonData = pm.response.json()[0];",
+									"    pm.expect(jsonData.title).to.eql(titleImage);",
+									"});",
+									"*/",
+									"",
+									"",
+									"//Busca match toda la respuesta",
+									"/*",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"WI FI\");",
+									"});",
+									"*/",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getImageById",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idImage = \"ec997c10-2d76-40d5-a13b-7c051f1dec58\";",
+									"pm.variables.set(\"idImage\", idImage);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images/:idImage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								":idImage"
+							],
+							"variable": [
+								{
+									"key": "idImage",
+									"value": "{{idImage}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getImageById Not Exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"IMAGE NOT FOUND - Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idImage = \"d2e589fe-913e-4872-8141-b70050b038c3\";",
+									"pm.variables.set(\"idImage\", idImage);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images/:idImage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								":idImage"
+							],
+							"variable": [
+								{
+									"key": "idImage",
+									"value": "{{idImage}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateImage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const idImage = \"ec997c10-2d76-40d5-a13b-7c051f1dec58\";",
+									"pm.variables.set(\"idImage\", idImage);",
+									"",
+									"",
+									"const idProduct = \"49427582-4853-4c40-95db-0fe608471fe4\";",
+									"pm.variables.set(\"idProduct\", idProduct);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{idImage}}\",\n    \"title\": \"CASAAAAAAAAAAAAAAAAA\",\n    \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n    \"productDTO\": {\"id\": \"{{idProduct}}\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateImage Not Found",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"IMAGE DOES'T EXIST - Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//const idImage = \"fdd0cdba-3a26-4e52-9779-7674e5da4918\";",
+									"//const idProduct = \"45b66452-736a-4b8e-bc9a-d0e60443bca6\";"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"{{idImage}}\",\n    \"tile\": \"Test update image\",\n    \"url\": \"https://unsplash.com/es/fotos/jiOT5GBJIMk\",\n    \"productDTO\": {\"id\": \"{{idProduct}}\"}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteImages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images/:idImage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								":idImage"
+							],
+							"variable": [
+								{
+									"key": "idImage",
+									"value": "{{idImage}}"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteImagesExist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/images/{{idImage}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"images",
+										"{{idImage}}"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Jun 2022 18:49:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "deleteImages Asoc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images/:idImage",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								":idImage"
+							],
+							"variable": [
+								{
+									"key": "idImage",
+									"value": "f59dfeae-5f1a-4cdf-9959-2926f4d078ef"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteImages Asoc",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/images/:idImage",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"images",
+										":idImage"
+									],
+									"variable": [
+										{
+											"key": "idImage",
+											"value": "{{idImage}}",
+											"description": "Id de una imagen asociada a un producto"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jun 2022 07:16:38 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "deleteImages Not exist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									"",
+									"pm.test(\"Image not found\", function () {",
+									"    pm.response.to.have.body(\"Image not found for id \" + pm.collectionVariables.get(\"idImage\"));",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/images/{{idImage}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"images",
+								"{{idImage}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deleteImagesExist",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/images/{{idImage}}",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"images",
+										"{{idImage}}"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1; mode=block"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, no-store, max-age=0, must-revalidate"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Expires",
+									"value": "0"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 06 Jun 2022 18:49:37 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"IMAGE Successful request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201, 202, 204, 404]);",
+							"});",
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "meli",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:8080"
+		},
+		{
+			"key": "idCategory",
+			"value": ""
+		},
+		{
+			"key": "title",
+			"value": ""
+		},
+		{
+			"key": "nameCity",
+			"value": ""
+		},
+		{
+			"key": "idCity",
+			"value": ""
+		},
+		{
+			"key": "idFeature",
+			"value": ""
+		},
+		{
+			"key": "nameFeature",
+			"value": ""
+		},
+		{
+			"key": "idImage",
+			"value": ""
+		},
+		{
+			"key": "titleImage",
+			"value": ""
+		},
+		{
+			"key": "description",
+			"value": ""
+		},
+		{
+			"key": "idProduct",
+			"value": ""
+		},
+		{
+			"key": "idImage1",
+			"value": ""
+		},
+		{
+			"key": "idImage2",
+			"value": ""
+		},
+		{
+			"key": "idProduct1",
+			"value": ""
+		}
+	]
+}

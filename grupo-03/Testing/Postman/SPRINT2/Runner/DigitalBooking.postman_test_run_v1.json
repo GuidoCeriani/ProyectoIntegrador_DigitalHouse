@@ -1,0 +1,775 @@
+{
+	"id": "13fc7f4a-f4a6-48ee-8de0-16c71f0a232b",
+	"name": "DigitalBooking",
+	"timestamp": "2022-06-02T05:34:06.101Z",
+	"collection_id": "18531594-65979a7b-522f-401c-8a66-609e876d6b5e",
+	"folder_id": 0,
+	"environment_id": "a4cec01d-0768-4b5a-b108-50c70309965f",
+	"totalPass": 8,
+	"totalFail": 15,
+	"results": [
+		{
+			"id": "c83aa10a-5563-432e-9e9e-476653e9dd2b",
+			"name": "getListCategories",
+			"url": "http://localhost:8080/categories",
+			"time": 485,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				485
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8c9350f8-bbd3-4fc0-b294-3a06263c73b3",
+			"name": "getCategoryById",
+			"url": "http://localhost:8080/categories/1530b05b-38c3-470e-839f-2a0752a47e8c",
+			"time": 46,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				46
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f42996a8-26cd-46c2-a67d-b0cd9e890e71",
+			"name": "createCategory",
+			"url": "http://localhost:8080/categories",
+			"time": 137,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				137
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "a781b7e2-2eae-40c3-8101-219288cee99c",
+			"name": "updateCategory",
+			"url": "http://localhost:8080/categories",
+			"time": 15,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "29eccc80-0341-4815-9c84-1ad6eab23016",
+			"name": "deleteCategory",
+			"url": "http://localhost:8080/categories/439e74fe-",
+			"time": 37,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "be7071e0-d0e0-4418-9b0f-1f80418f8bf3",
+			"name": "getListCities",
+			"url": "http://localhost:8080/cities",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "50d49090-9434-4897-b8ab-37db4b5c9ffe",
+			"name": "getCityById",
+			"url": "http://localhost:8080/cities/d0c2d08c-4dbc-4f48-a535-17831473a847",
+			"time": 29,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "37d610fc-fc82-488f-983c-14cd3262b7d3",
+			"name": "createCity",
+			"url": "http://localhost:8080/cities",
+			"time": 27,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "6935400c-ad7a-49f9-82ce-977e7819bb9a",
+			"name": "updateCity",
+			"url": "http://localhost:8080/cities",
+			"time": 19,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "04b07190-a70e-4b67-bd32-8feb8a51ee6c",
+			"name": "deleteCity",
+			"url": "http://localhost:8080/cities/0bda3c1b-e04f-4d32-8b0c-e1f100f0efac",
+			"time": 22,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "11c3bd04-cab7-4d04-83fe-cc88d624c69b",
+			"name": "getListProducts",
+			"url": "http://localhost:8080/products",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "124ba51b-0570-4e51-8127-3b5baa5f8a97",
+			"name": "getProductsById",
+			"url": "http://localhost:8080/products",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				16
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8e60cdfd-6bff-40fa-a248-185fc5be16e6",
+			"name": "createProduct",
+			"url": "http://localhost:8080/products",
+			"time": 64,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "c4cc3a10-f4f4-4462-a24c-36aa1b6127d4",
+			"name": "updateProduct",
+			"url": "http://localhost:8080/products",
+			"time": 32,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "692a94fe-30eb-4d38-8f59-201f301e30e3",
+			"name": "deleteProduct",
+			"url": "http://localhost:8080/products/46645eb5-c92c-4036-8ecd-59068dfb1752",
+			"time": 29,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "9e92e23a-19e4-4710-9197-01ebe9d739b4",
+			"name": "getListImages",
+			"url": "http://localhost:8080/images",
+			"time": 30,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "130712c5-6ef4-491f-be14-2a5f01724ea3",
+			"name": "getImageById",
+			"url": "http://localhost:8080/images/46645eb5-c92c-4036-8ecd-59068dfb1752",
+			"time": 21,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "9c0e944f-6ae0-4c6f-bf50-5f4c16a2271a",
+			"name": "createImage",
+			"url": "http://localhost:8080/images",
+			"time": 23,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "e9565a4f-2995-4465-8aaa-a62d79f241a7",
+			"name": "updateImage",
+			"url": "http://localhost:8080/cities",
+			"time": 20,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "cd5bce54-43b2-428e-821c-225c18974581",
+			"name": "deleteImages",
+			"url": "http://localhost:8080/images/46645eb5-c92c-4036-8ecd-59068dfb1752",
+			"time": 24,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "4512307f-be12-49fe-a3c4-c8ce9f453fab",
+			"name": "getListFeatures",
+			"url": "http://localhost:8080/features",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "b22d7e0d-b33a-44ae-8977-a0c422b64ea2",
+			"name": "getFeatureById",
+			"url": "http://localhost:8080/features/f88516d8-a872-49e2-8fc1-2e4254c04649",
+			"time": 18,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "8b6f3d18-e833-43a9-a1f8-f819607fe89e",
+			"name": "createFeature",
+			"url": "http://localhost:8080/features",
+			"time": 26,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "cb96d635-a332-42e9-a385-a1841c1c3a2d",
+			"name": "updateFeature",
+			"url": "http://localhost:8080/features",
+			"time": 20,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "7290f3fc-bdf2-4759-a93d-4a4618305874",
+			"name": "deleteFeatures",
+			"url": "http://localhost:8080/features/46645eb5-c92c-4036-8ecd-59068dfb1752",
+			"time": 21,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1226,
+	"collection": {
+		"requests": [
+			{
+				"id": "c83aa10a-5563-432e-9e9e-476653e9dd2b",
+				"method": "GET"
+			},
+			{
+				"id": "8c9350f8-bbd3-4fc0-b294-3a06263c73b3",
+				"method": "GET"
+			},
+			{
+				"id": "f42996a8-26cd-46c2-a67d-b0cd9e890e71",
+				"method": "POST"
+			},
+			{
+				"id": "a781b7e2-2eae-40c3-8101-219288cee99c",
+				"method": "PUT"
+			},
+			{
+				"id": "29eccc80-0341-4815-9c84-1ad6eab23016",
+				"method": "DELETE"
+			},
+			{
+				"id": "be7071e0-d0e0-4418-9b0f-1f80418f8bf3",
+				"method": "GET"
+			},
+			{
+				"id": "50d49090-9434-4897-b8ab-37db4b5c9ffe",
+				"method": "GET"
+			},
+			{
+				"id": "37d610fc-fc82-488f-983c-14cd3262b7d3",
+				"method": "POST"
+			},
+			{
+				"id": "6935400c-ad7a-49f9-82ce-977e7819bb9a",
+				"method": "PUT"
+			},
+			{
+				"id": "04b07190-a70e-4b67-bd32-8feb8a51ee6c",
+				"method": "DELETE"
+			},
+			{
+				"id": "11c3bd04-cab7-4d04-83fe-cc88d624c69b",
+				"method": "GET"
+			},
+			{
+				"id": "124ba51b-0570-4e51-8127-3b5baa5f8a97",
+				"method": "GET"
+			},
+			{
+				"id": "8e60cdfd-6bff-40fa-a248-185fc5be16e6",
+				"method": "POST"
+			},
+			{
+				"id": "c4cc3a10-f4f4-4462-a24c-36aa1b6127d4",
+				"method": "PUT"
+			},
+			{
+				"id": "692a94fe-30eb-4d38-8f59-201f301e30e3",
+				"method": "DELETE"
+			},
+			{
+				"id": "9e92e23a-19e4-4710-9197-01ebe9d739b4",
+				"method": "GET"
+			},
+			{
+				"id": "130712c5-6ef4-491f-be14-2a5f01724ea3",
+				"method": "GET"
+			},
+			{
+				"id": "9c0e944f-6ae0-4c6f-bf50-5f4c16a2271a",
+				"method": "POST"
+			},
+			{
+				"id": "e9565a4f-2995-4465-8aaa-a62d79f241a7",
+				"method": "PUT"
+			},
+			{
+				"id": "cd5bce54-43b2-428e-821c-225c18974581",
+				"method": "DELETE"
+			},
+			{
+				"id": "4512307f-be12-49fe-a3c4-c8ce9f453fab",
+				"method": "GET"
+			},
+			{
+				"id": "b22d7e0d-b33a-44ae-8977-a0c422b64ea2",
+				"method": "GET"
+			},
+			{
+				"id": "8b6f3d18-e833-43a9-a1f8-f819607fe89e",
+				"method": "POST"
+			},
+			{
+				"id": "cb96d635-a332-42e9-a385-a1841c1c3a2d",
+				"method": "PUT"
+			},
+			{
+				"id": "7290f3fc-bdf2-4759-a93d-4a4618305874",
+				"method": "DELETE"
+			}
+		]
+	}
+}

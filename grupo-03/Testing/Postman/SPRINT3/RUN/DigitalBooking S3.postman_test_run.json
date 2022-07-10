@@ -1,0 +1,2042 @@
+{
+	"id": "f2757ba8-16c0-4390-8c2a-0fbc215e96f0",
+	"name": "DigitalBooking S3",
+	"timestamp": "2022-07-06T20:01:14.914Z",
+	"collection_id": "18531594-481f5738-bfd5-4e12-b5af-9473450ccff1",
+	"folder_id": 0,
+	"environment_id": "119c7b58-d9bd-454f-b9c8-e0b3dc95e148",
+	"totalPass": 127,
+	"totalFail": 28,
+	"results": [
+		{
+			"id": "5744e389-d07d-4a30-9ca6-c5a20eaeb3a3",
+			"name": "createCategory",
+			"url": "http://localhost:8080/categories",
+			"time": 9,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "4af04c48-aef9-45f3-b7ae-fc36bb92d834",
+			"name": "getListCategories",
+			"url": "http://localhost:8080/categories",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 200": true,
+				"Response JSON value check": true,
+				"Response body should be an array": true,
+				"*****Response body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"*****Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 200": true,
+					"Response JSON value check": true,
+					"Response body should be an array": true,
+					"*****Response body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "329d0761-7c05-46b2-aebf-5a021ed089be",
+			"name": "getCategoryById",
+			"url": "http://localhost:8080/categories/0250a477-dc2c-46dc-a2a7-822d0daa529e",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Response body should be an object": true,
+				"Content-Type is JSON": true,
+				"Category BY ID Response body should be in the correct format": true,
+				"Category Not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category BY ID Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category Not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Response body should be an object": true,
+					"Content-Type is JSON": true,
+					"Category BY ID Response body should be in the correct format": true,
+					"Category Not found": false
+				}
+			]
+		},
+		{
+			"id": "1e093b0e-5beb-43a1-af9f-fec6a1d315de",
+			"name": "getCategoryById Set",
+			"url": "http://localhost:8080/categories/085e7b9a-9b36-4772-a157-b17a76344090",
+			"time": 7,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": false,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": false,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": true
+				}
+			]
+		},
+		{
+			"id": "e89f582c-f4af-444e-bf28-a4b91e980c24",
+			"name": "updateCategory",
+			"url": "http://localhost:8080/categories",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "4a2dd2d2-b70c-4fe3-b93a-f495adb0a27b",
+			"name": "updateCategory Asoc",
+			"url": "http://localhost:8080/categories",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "7e5d7368-8a40-49b5-aefb-df202d0c50df",
+			"name": "deleteCategory",
+			"url": "http://localhost:8080/categories/80d0c8b1-7200-495a-9983-bb3cc2ca21bc",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "1e4fab7c-c29b-415a-903c-88df88902fef",
+			"name": "deleteCategory Not Exist",
+			"url": "http://localhost:8080/categories/ab518caa-ce4f-4345-ac39-4462483c096d",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 404": false,
+				"Category not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Category not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 404": false,
+					"Category not found": false
+				}
+			]
+		},
+		{
+			"id": "d989d506-2e33-452f-9123-cefadf57e2e2",
+			"name": "createCity",
+			"url": "http://localhost:8080/cities",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "c54dcea3-8522-4146-98f3-168ffe9dc437",
+			"name": "getListCities",
+			"url": "http://localhost:8080/cities",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "2b453c93-3f49-4276-ab6c-18d8adb14726",
+			"name": "getCityById",
+			"url": "http://localhost:8080/cities/46d88b8a-98d0-444e-8163-185a56d7b56e",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "baca5cba-5fac-41cf-917d-366b36949722",
+			"name": "updateCity",
+			"url": "http://localhost:8080/cities",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true
+				}
+			]
+		},
+		{
+			"id": "d7230d33-d47f-467f-bb98-811c0694c170",
+			"name": "deleteCity",
+			"url": "http://localhost:8080/cities/46d88b8a-98d0-444e-8163-185a56d7b56e",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "170e0c7e-6057-45b2-a075-3ac86d6afb4f",
+			"name": "deleteCity Set",
+			"url": "http://localhost:8080/cities/1e396062-a5ba-41cd-9167-02694a013785",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "564a3d0f-a010-477e-ba03-c763f51bdf99",
+			"name": "deleteCity No Asoc",
+			"url": "http://localhost:8080/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "d3521412-7ff3-45ff-8894-88cc5cdfc8cb",
+			"name": "createFeature",
+			"url": "http://localhost:8080/features",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "0435c915-c9a8-4a9b-9495-0ebf504d0378",
+			"name": "getListFeatures",
+			"url": "http://localhost:8080/features",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check - FEATURE NAME": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check - FEATURE NAME": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check - FEATURE NAME": true
+				}
+			]
+		},
+		{
+			"id": "2dc34e4f-20d1-48a6-8bef-c59057a599d0",
+			"name": "getFeatureById VER",
+			"url": "http://localhost:8080/features/036831eb-2f6e-4a50-8e77-05d0650fa482",
+			"time": 33,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				33
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "380a7895-13dd-4b83-aa0f-276eec68838b",
+			"name": "updateFeature",
+			"url": "http://localhost:8080/features",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "3c49e107-ce8e-42cf-a3f9-50d61927dae6",
+			"name": "deleteFeatures",
+			"url": "http://localhost:8080/features/036831eb-2f6e-4a50-8e77-05d0650fa482",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 204 - NO CONTENT": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204 - NO CONTENT": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 204 - NO CONTENT": false
+				}
+			]
+		},
+		{
+			"id": "e7d610d1-60ef-4dec-8512-5b83b1cb5cba",
+			"name": "deleteFeature Not exist",
+			"url": "http://localhost:8080/features/75561ab9-dccf-40cc-97f3-0932c6f523a0",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 404": false,
+				"Feature not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Feature not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 404": false,
+					"Feature not found": false
+				}
+			]
+		},
+		{
+			"id": "b16f5e3a-c923-45c8-ba18-c1968bcea332",
+			"name": "createProduct",
+			"url": "http://localhost:8080/products",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "657707f3-b76a-4d32-86ac-0582dc5d1366",
+			"name": "createProduct Policy",
+			"url": "http://localhost:8080/products",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "dcc20609-80b7-4a0c-a2f6-a90618453142",
+			"name": "getListProducts",
+			"url": "http://localhost:8080/products",
+			"time": 65,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "4f838c7c-a90b-4d33-b2f1-68e943161429",
+			"name": "getProductsById",
+			"url": "http://localhost:8080/products/59556751-4e59-4868-b598-577ec9a4d712",
+			"time": 9,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "a23a604d-34bc-47bb-8544-143264947254",
+			"name": "getProductosByCity",
+			"url": "http://localhost:8080/products?city=Guaymall%C3%A9n",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Response body should be an array": true,
+				"Content-Type is JSON": true,
+				"***** Response PRODUCT BY CITY body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"***** Response PRODUCT BY CITY body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Response body should be an array": true,
+					"Content-Type is JSON": true,
+					"***** Response PRODUCT BY CITY body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "96c7eaed-c118-4d1b-8a09-5c894995a560",
+			"name": "getProductosByCategory",
+			"url": "http://localhost:8080/products?category=departamentos",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "57ef5de2-67c0-4f7b-88a7-a87151f5e687",
+			"name": "getProductosByDate&City",
+			"url": "http://localhost:8080/products/?checkIn=2020-04-21&checkOut=2020-04-30&name=Medell%C3%ADn",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "4b9b0ed0-a3f7-4489-862b-1bc155dc528b",
+			"name": "getProductosByDate",
+			"url": "http://localhost:8080/products/?checkIn=2019-02-20&checkOut=2019-02-21",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "a4d68ff9-8ce1-4cb1-b4d2-a3c58cb447e4",
+			"name": "deleteProduct",
+			"url": "http://localhost:8080/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "5fd5f8cc-4515-4906-a559-91e39b995e08",
+			"name": "updateFeature Feature Exist",
+			"url": "http://localhost:8080/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/a6e6f007-d423-41df-92c8-f930c770406f",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Feature added. Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Feature added. Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Feature added. Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "9d8fbddf-17a4-4e56-b67e-e04330ef9616",
+			"name": "updateFeature NotFound",
+			"url": "http://localhost:8080/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/f878aadc-132f-4bc2-ab16-f2177e11375",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"This product don't have this feature. Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"This product don't have this feature. Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"This product don't have this feature. Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "bcfe09f6-e249-4e95-b243-c8a9ac4b95d8",
+			"name": "updateFeature Unlink",
+			"url": "http://localhost:8080/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/unlink/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "ece03ef0-7888-4a6f-807b-a0607c2148d4",
+			"name": "createImage",
+			"url": "http://localhost:8080/images",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "88525d6f-d499-43af-b421-ce5f007d36cc",
+			"name": "getListImages",
+			"url": "http://localhost:8080/images",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "75c093af-60fa-4dc2-bcbb-3856daab3bca",
+			"name": "getImageById",
+			"url": "http://localhost:8080/images/1c242722-1f6e-4b0e-8bce-f6d27aebdce0",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ba65583e-2262-4826-894f-63609cfd907b",
+			"name": "getImageById Not Exist",
+			"url": "http://localhost:8080/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 9,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE NOT FOUND - Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE NOT FOUND - Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE NOT FOUND - Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "347e5172-8003-471e-9399-569cb5d65ed7",
+			"name": "updateImage",
+			"url": "http://localhost:8080/images",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "e3683089-adc9-4a13-a91c-6ca91196438b",
+			"name": "updateImage Not Found",
+			"url": "http://localhost:8080/images",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE - DOES'T EXIST or Unauthorize request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE - DOES'T EXIST or Unauthorize request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE - DOES'T EXIST or Unauthorize request": true
+				}
+			]
+		},
+		{
+			"id": "774a07f0-4236-4c5e-9e88-02876b147798",
+			"name": "deleteImages",
+			"url": "http://localhost:8080/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 204": false,
+				"IMAGE - Unauthorize request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"IMAGE - Unauthorize request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 204": false,
+					"IMAGE - Unauthorize request": true
+				}
+			]
+		},
+		{
+			"id": "c1902d65-ca9b-4fc2-a8e6-74b7f5d1766d",
+			"name": "deleteImages Asoc",
+			"url": "http://localhost:8080/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "7b4d0b5f-31ad-4f15-9f05-a1d86662417e",
+			"name": "deleteImages Not exist",
+			"url": "http://localhost:8080/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Image not found or Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image not found or Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Image not found or Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "30135b16-f562-4ecb-9d11-814b93a19737",
+			"name": "createReservation",
+			"url": "http://localhost:8080/reservations",
+			"time": 5,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "7a75f817-a6a4-4bb6-ba9b-2d1c832d7513",
+			"name": "GetReservationsByUser authenticated",
+			"url": "http://localhost:8080/reservations",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 510,
+	"collection": {
+		"requests": [
+			{
+				"id": "5744e389-d07d-4a30-9ca6-c5a20eaeb3a3",
+				"method": "POST"
+			},
+			{
+				"id": "4af04c48-aef9-45f3-b7ae-fc36bb92d834",
+				"method": "GET"
+			},
+			{
+				"id": "329d0761-7c05-46b2-aebf-5a021ed089be",
+				"method": "GET"
+			},
+			{
+				"id": "1e093b0e-5beb-43a1-af9f-fec6a1d315de",
+				"method": "GET"
+			},
+			{
+				"id": "e89f582c-f4af-444e-bf28-a4b91e980c24",
+				"method": "PUT"
+			},
+			{
+				"id": "4a2dd2d2-b70c-4fe3-b93a-f495adb0a27b",
+				"method": "PUT"
+			},
+			{
+				"id": "7e5d7368-8a40-49b5-aefb-df202d0c50df",
+				"method": "DELETE"
+			},
+			{
+				"id": "1e4fab7c-c29b-415a-903c-88df88902fef",
+				"method": "DELETE"
+			},
+			{
+				"id": "d989d506-2e33-452f-9123-cefadf57e2e2",
+				"method": "POST"
+			},
+			{
+				"id": "c54dcea3-8522-4146-98f3-168ffe9dc437",
+				"method": "GET"
+			},
+			{
+				"id": "2b453c93-3f49-4276-ab6c-18d8adb14726",
+				"method": "GET"
+			},
+			{
+				"id": "baca5cba-5fac-41cf-917d-366b36949722",
+				"method": "PUT"
+			},
+			{
+				"id": "d7230d33-d47f-467f-bb98-811c0694c170",
+				"method": "DELETE"
+			},
+			{
+				"id": "170e0c7e-6057-45b2-a075-3ac86d6afb4f",
+				"method": "DELETE"
+			},
+			{
+				"id": "564a3d0f-a010-477e-ba03-c763f51bdf99",
+				"method": "DELETE"
+			},
+			{
+				"id": "d3521412-7ff3-45ff-8894-88cc5cdfc8cb",
+				"method": "POST"
+			},
+			{
+				"id": "0435c915-c9a8-4a9b-9495-0ebf504d0378",
+				"method": "GET"
+			},
+			{
+				"id": "2dc34e4f-20d1-48a6-8bef-c59057a599d0",
+				"method": "GET"
+			},
+			{
+				"id": "380a7895-13dd-4b83-aa0f-276eec68838b",
+				"method": "PUT"
+			},
+			{
+				"id": "3c49e107-ce8e-42cf-a3f9-50d61927dae6",
+				"method": "DELETE"
+			},
+			{
+				"id": "e7d610d1-60ef-4dec-8512-5b83b1cb5cba",
+				"method": "DELETE"
+			},
+			{
+				"id": "b16f5e3a-c923-45c8-ba18-c1968bcea332",
+				"method": "POST"
+			},
+			{
+				"id": "657707f3-b76a-4d32-86ac-0582dc5d1366",
+				"method": "POST"
+			},
+			{
+				"id": "dcc20609-80b7-4a0c-a2f6-a90618453142",
+				"method": "GET"
+			},
+			{
+				"id": "4f838c7c-a90b-4d33-b2f1-68e943161429",
+				"method": "GET"
+			},
+			{
+				"id": "a23a604d-34bc-47bb-8544-143264947254",
+				"method": "GET"
+			},
+			{
+				"id": "96c7eaed-c118-4d1b-8a09-5c894995a560",
+				"method": "GET"
+			},
+			{
+				"id": "57ef5de2-67c0-4f7b-88a7-a87151f5e687",
+				"method": "GET"
+			},
+			{
+				"id": "4b9b0ed0-a3f7-4489-862b-1bc155dc528b",
+				"method": "GET"
+			},
+			{
+				"id": "a4d68ff9-8ce1-4cb1-b4d2-a3c58cb447e4",
+				"method": "DELETE"
+			},
+			{
+				"id": "5fd5f8cc-4515-4906-a559-91e39b995e08",
+				"method": "PATCH"
+			},
+			{
+				"id": "9d8fbddf-17a4-4e56-b67e-e04330ef9616",
+				"method": "PATCH"
+			},
+			{
+				"id": "bcfe09f6-e249-4e95-b243-c8a9ac4b95d8",
+				"method": "PATCH"
+			},
+			{
+				"id": "ece03ef0-7888-4a6f-807b-a0607c2148d4",
+				"method": "POST"
+			},
+			{
+				"id": "88525d6f-d499-43af-b421-ce5f007d36cc",
+				"method": "GET"
+			},
+			{
+				"id": "75c093af-60fa-4dc2-bcbb-3856daab3bca",
+				"method": "GET"
+			},
+			{
+				"id": "ba65583e-2262-4826-894f-63609cfd907b",
+				"method": "GET"
+			},
+			{
+				"id": "347e5172-8003-471e-9399-569cb5d65ed7",
+				"method": "PUT"
+			},
+			{
+				"id": "e3683089-adc9-4a13-a91c-6ca91196438b",
+				"method": "PUT"
+			},
+			{
+				"id": "774a07f0-4236-4c5e-9e88-02876b147798",
+				"method": "DELETE"
+			},
+			{
+				"id": "c1902d65-ca9b-4fc2-a8e6-74b7f5d1766d",
+				"method": "DELETE"
+			},
+			{
+				"id": "7b4d0b5f-31ad-4f15-9f05-a1d86662417e",
+				"method": "DELETE"
+			},
+			{
+				"id": "30135b16-f562-4ecb-9d11-814b93a19737",
+				"method": "POST"
+			},
+			{
+				"id": "7a75f817-a6a4-4bb6-ba9b-2d1c832d7513",
+				"method": "GET"
+			}
+		]
+	}
+}

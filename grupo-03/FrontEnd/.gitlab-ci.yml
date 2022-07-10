@@ -1,0 +1,44 @@
+stages:
+  - build
+  - test
+  - docker-build
+
+build:
+  stage: build
+  image: node:14
+  script: 
+    - echo "Start building App"
+    - cd FrontEnd
+    - npm install
+    - CI=false npm run build
+    - echo "Build successfully!"
+  artifacts:
+    expire_in: 1 hour
+    paths:
+      - FrontEnd/build
+      - FrontEnd/node_modules/
+
+test:
+  stage: test
+  needs: [build]
+  image: node:14
+  script:
+    - echo "Testing App"
+    #- cd FrontEnd
+    #- npm install
+    #- CI=true npm test --passWithNoTests
+    - echo "Test successfully!"
+
+docker-build:
+  stage: docker-build
+  needs: [test]
+  image: docker:latest
+  services: 
+    - name: docker:19.03.8-dind
+  before_script:
+    - cd FrontEnd
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - docker build --pull -t "$CI_REGISTRY_IMAGE"/frontend .
+    - docker push "$CI_REGISTRY_IMAGE"/frontend
+    - echo "Registry image:" $CI_REGISTRY_IMAGE/frontend

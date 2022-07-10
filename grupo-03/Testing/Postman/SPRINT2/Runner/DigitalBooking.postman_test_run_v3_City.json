@@ -1,0 +1,209 @@
+{
+	"id": "03fe67a3-d93c-4ee0-8cbf-14761b424632",
+	"name": "DigitalBooking",
+	"timestamp": "2022-06-06T17:36:55.919Z",
+	"collection_id": "18531594-29f31391-21c3-4899-b17c-21c7131b2de1",
+	"folder_id": "18531594-c7cf490e-89d9-4043-8af6-2b331d3a97dc",
+	"environment_id": "119c7b58-d9bd-454f-b9c8-e0b3dc95e148",
+	"totalPass": 11,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "92f1618f-6823-4797-a01e-915e71c182c0",
+			"name": "createCity",
+			"url": "http://localhost:8080/cities",
+			"time": 30,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "e27cc0e8-3e3e-4422-8d9e-f5e220899d5f",
+			"name": "getListCities",
+			"url": "http://localhost:8080/cities",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "35cb49b8-f909-4e4e-a0be-0678c34ff42d",
+			"name": "getCityById",
+			"url": "http://localhost:8080/cities/833db75c-ccb1-4225-84e9-e7e76434a594",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "a69442f0-e5aa-4fbe-aa98-1544c68778ca",
+			"name": "updateCity",
+			"url": "http://localhost:8080/cities",
+			"time": 28,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"PUT Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PUT Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				28
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"PUT Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "622b0eea-75ce-4dc4-a1e8-98bd2ac6e29e",
+			"name": "deleteCity",
+			"url": "http://localhost:8080/cities/833db75c-ccb1-4225-84e9-e7e76434a594",
+			"time": 23,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 126,
+	"collection": {
+		"requests": [
+			{
+				"id": "92f1618f-6823-4797-a01e-915e71c182c0",
+				"method": "POST"
+			},
+			{
+				"id": "e27cc0e8-3e3e-4422-8d9e-f5e220899d5f",
+				"method": "GET"
+			},
+			{
+				"id": "35cb49b8-f909-4e4e-a0be-0678c34ff42d",
+				"method": "GET"
+			},
+			{
+				"id": "a69442f0-e5aa-4fbe-aa98-1544c68778ca",
+				"method": "PUT"
+			},
+			{
+				"id": "622b0eea-75ce-4dc4-a1e8-98bd2ac6e29e",
+				"method": "DELETE"
+			}
+		]
+	}
+}

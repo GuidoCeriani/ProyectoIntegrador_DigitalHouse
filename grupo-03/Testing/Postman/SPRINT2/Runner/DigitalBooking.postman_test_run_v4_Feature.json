@@ -1,0 +1,215 @@
+{
+	"id": "651f6cf9-c196-42a1-a09a-4b63d652f0c2",
+	"name": "DigitalBooking",
+	"timestamp": "2022-06-06T17:39:27.206Z",
+	"collection_id": "18531594-29f31391-21c3-4899-b17c-21c7131b2de1",
+	"folder_id": "18531594-e63310bd-3172-48ee-9ef9-f594081db87c",
+	"environment_id": "119c7b58-d9bd-454f-b9c8-e0b3dc95e148",
+	"totalPass": 12,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "12c97da0-c40b-4aee-ae46-3d9766a346c1",
+			"name": "createFeature",
+			"url": "http://localhost:8080/features",
+			"time": 38,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "51f832e5-0c48-4260-b970-03dcc1c5baff",
+			"name": "getListFeatures",
+			"url": "http://localhost:8080/features",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check - FEATURE NAME": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check - FEATURE NAME": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check - FEATURE NAME": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "9c7c1fa4-f5ab-42d9-9e1f-560c340fb912",
+			"name": "getFeatureById",
+			"url": "http://localhost:8080/features/c0bce702-13cc-4bac-96a3-e57466832550",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				18
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "27fd4672-4bc0-4334-a9ee-d0e21f257150",
+			"name": "updateFeature",
+			"url": "http://localhost:8080/features",
+			"time": 24,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				24
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Successful PUT request": true
+				}
+			]
+		},
+		{
+			"id": "b1e9d4f3-2645-4c83-bbdd-a54b97c5a1d5",
+			"name": "deleteFeatures",
+			"url": "http://localhost:8080/features/c0bce702-13cc-4bac-96a3-e57466832550",
+			"time": 25,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"CITY Successful request": true,
+				"Status code is 204 - NO CONTENT": true
+			},
+			"testPassFailCounts": {
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204 - NO CONTENT": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"CITY Successful request": true,
+					"Status code is 204 - NO CONTENT": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 125,
+	"collection": {
+		"requests": [
+			{
+				"id": "12c97da0-c40b-4aee-ae46-3d9766a346c1",
+				"method": "POST"
+			},
+			{
+				"id": "51f832e5-0c48-4260-b970-03dcc1c5baff",
+				"method": "GET"
+			},
+			{
+				"id": "9c7c1fa4-f5ab-42d9-9e1f-560c340fb912",
+				"method": "GET"
+			},
+			{
+				"id": "27fd4672-4bc0-4334-a9ee-d0e21f257150",
+				"method": "PUT"
+			},
+			{
+				"id": "b1e9d4f3-2645-4c83-bbdd-a54b97c5a1d5",
+				"method": "DELETE"
+			}
+		]
+	}
+}

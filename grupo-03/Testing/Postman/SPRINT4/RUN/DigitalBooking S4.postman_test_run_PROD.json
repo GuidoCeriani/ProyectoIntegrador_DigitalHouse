@@ -1,0 +1,7714 @@
+{
+	"id": "1b0de773-5f7f-4d2f-abb5-7bb902f35ec6",
+	"name": "DigitalBooking S4",
+	"timestamp": "2022-07-06T22:23:59.269Z",
+	"collection_id": "18531594-aea8a451-6a8c-43ce-93fb-908b2369660f",
+	"folder_id": 0,
+	"environment_id": "04420ff3-ff86-40f3-8b01-c0f882eb9cd2",
+	"totalPass": 429,
+	"totalFail": 140,
+	"results": [
+		{
+			"id": "ddc0b90b-863d-4bbf-b15e-128cf54019de",
+			"name": "createCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 359,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				359
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "80b5ba79-a889-41d1-80f2-a9938ac5f203",
+			"name": "getListCategories",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 189,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 200": true,
+				"Response JSON value check": true,
+				"Response body should be an array": true,
+				"*****Response body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"*****Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 200": true,
+					"Response JSON value check": true,
+					"Response body should be an array": true,
+					"*****Response body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "7bc2629a-686e-481d-a291-69bc425cc881",
+			"name": "getCategoryById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/0250a477-dc2c-46dc-a2a7-822d0daa529e",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Response body should be an object": true,
+				"Content-Type is JSON": true,
+				"Category BY ID Response body should be in the correct format": true,
+				"Category Not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category BY ID Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category Not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Response body should be an object": true,
+					"Content-Type is JSON": true,
+					"Category BY ID Response body should be in the correct format": true,
+					"Category Not found": false
+				}
+			]
+		},
+		{
+			"id": "b57d2994-457e-4dd3-b630-fe28ccb696c9",
+			"name": "getCategoryById Set",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/085e7b9a-9b36-4772-a157-b17a76344090",
+			"time": 184,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": false,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": false,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": true
+				}
+			]
+		},
+		{
+			"id": "ef700f01-cf58-4294-b724-a79bc52fa481",
+			"name": "updateCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "1d90b4a3-2f03-42f9-9b42-638aff25b696",
+			"name": "updateCategory Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "f6a660b0-5155-455b-b113-20be7d3a1382",
+			"name": "deleteCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/80d0c8b1-7200-495a-9983-bb3cc2ca21bc",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "749a4f24-fd3b-43e2-9490-e30d9516ca72",
+			"name": "deleteCategory Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/ab518caa-ce4f-4345-ac39-4462483c096d",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 404": false,
+				"Category not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Category not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 404": false,
+					"Category not found": false
+				}
+			]
+		},
+		{
+			"id": "451e8f71-29a7-4332-b8d8-15edb2b34352",
+			"name": "createCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "9fd9cc0d-2be7-4b10-8f59-5beec3097468",
+			"name": "getListCities",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "b8193570-0e0d-4b65-ba9c-a4ad5da96463",
+			"name": "getCityById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/009c9777-e07c-4d6a-b121-f01a1781c1c9",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "44aee30f-363b-49e3-86d8-63e29caffb6a",
+			"name": "updateCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true
+				}
+			]
+		},
+		{
+			"id": "0772c2f2-3172-4ced-b613-197396c184ee",
+			"name": "deleteCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/009c9777-e07c-4d6a-b121-f01a1781c1c9",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "43b10a66-6060-471e-8bdb-e34b72de8250",
+			"name": "deleteCity Set",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/1e396062-a5ba-41cd-9167-02694a013785",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "4fafd8fb-f510-4268-a464-b8d309d055a6",
+			"name": "deleteCity No Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "f4b4caf1-0fd8-4937-985f-de3127d05503",
+			"name": "createFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "41ae4bfb-8ba5-4029-abf5-e0ce1686165c",
+			"name": "getListFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 216,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check - FEATURE NAME": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check - FEATURE NAME": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				216
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check - FEATURE NAME": true
+				}
+			]
+		},
+		{
+			"id": "516c5714-2c70-4ed1-8f6f-2da7c8e27055",
+			"name": "getFeatureById VER",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/036831eb-2f6e-4a50-8e77-05d0650fa482",
+			"time": 215,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				215
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "37af96cb-8e55-4e38-b1be-d12111a2d822",
+			"name": "updateFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "69b4db57-68f8-4f7d-a730-cad7a36f7c32",
+			"name": "deleteFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/036831eb-2f6e-4a50-8e77-05d0650fa482",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 204 - NO CONTENT": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204 - NO CONTENT": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 204 - NO CONTENT": false
+				}
+			]
+		},
+		{
+			"id": "e4650132-484b-4250-8df4-61618cdb4ff6",
+			"name": "deleteFeature Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/75561ab9-dccf-40cc-97f3-0932c6f523a0",
+			"time": 180,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 404": false,
+				"Feature not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Feature not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 404": false,
+					"Feature not found": false
+				}
+			]
+		},
+		{
+			"id": "a3654ab5-10d3-4925-8cb3-f320e4e23dde",
+			"name": "createProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "65c6c101-d3e4-452d-a6c3-a5bf59db3779",
+			"name": "createProduct Policy",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "b9458305-3daa-4d33-804a-c6f232a00733",
+			"name": "getListProducts",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 244,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				244
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "e8b3c196-4ec0-41f6-b1eb-3cfba914b68a",
+			"name": "getProductsById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/59556751-4e59-4868-b598-577ec9a4d712",
+			"time": 182,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "5e8b71a6-b030-4dda-b3b6-f6fb40976f54",
+			"name": "getProductosByCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?city=Guaymall%C3%A9n",
+			"time": 230,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Response body should be an array": true,
+				"Content-Type is JSON": true,
+				"***** Response PRODUCT BY CITY body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"***** Response PRODUCT BY CITY body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				230
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Response body should be an array": true,
+					"Content-Type is JSON": true,
+					"***** Response PRODUCT BY CITY body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "d30be0ce-ab7d-43b3-b1a5-b81c5668787d",
+			"name": "getProductosByCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?category=departamentos",
+			"time": 178,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				178
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "c543746b-8aff-43a5-b5f4-32de8243a778",
+			"name": "getProductosByDate&City",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2020-04-21&checkOut=2020-04-30&name=Medell%C3%ADn",
+			"time": 179,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "d1f1126d-acc9-4130-8e39-3a4604500fc4",
+			"name": "getProductosByDate",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2019-02-20&checkOut=2019-02-21",
+			"time": 233,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				233
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "33a43d4b-1aba-46e1-80fc-34ed928d9874",
+			"name": "updateProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "d9563a1c-275c-4d3c-8ef7-631f58d4ed08",
+			"name": "updateProductVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "75917802-58b5-4046-a90c-1432fdd485ad",
+			"name": "updateProductNoVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "274fe584-55e3-4d24-a173-149f798a878e",
+			"name": "updateProductNoVbles S3",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "c8edf775-28f9-469f-8c0d-00314fabe8ab",
+			"name": "deleteProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "a0b88c3e-584d-4c51-b853-d472e07c7fbb",
+			"name": "deleteProduct con Feature sin img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "e26cb386-2cd6-448f-88f9-f4282d0c8e45",
+			"name": "deleteProduct with Img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/81b2179a-5cd4-442d-94d5-d2d8c67bad04",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "387fd744-fd7b-44e8-9e53-04552dfe47ac",
+			"name": "deleteProduct Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 404": false,
+				"Product not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Product not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 404": false,
+					"Product not found": false
+				}
+			]
+		},
+		{
+			"id": "ef30b515-633c-404c-bb14-675b2405cea5",
+			"name": "updateFeature Feature Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/a6e6f007-d423-41df-92c8-f930c770406f",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Feature added. Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Feature added. Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Feature added. Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "8480c583-7c34-46db-a513-6709ce438378",
+			"name": "updateFeature NotFound",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/f878aadc-132f-4bc2-ab16-f2177e11375",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"This product don't have this feature. Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"This product don't have this feature. Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"This product don't have this feature. Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "720fa5b2-80c9-4abc-8fc7-44631fb4843b",
+			"name": "updateFeature Unlink",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/unlink/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "298c1dc3-0e4b-467e-b196-a58aae41e794",
+			"name": "createImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "d802d79c-0b39-4d7f-b7c6-5de67170b879",
+			"name": "getListImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f7b1f151-8757-40e9-aa42-df9505979eb2",
+			"name": "getImageById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/1c242722-1f6e-4b0e-8bce-f6d27aebdce0",
+			"time": 182,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "962d6c69-6c2b-4297-b1b9-a6b29dd177e1",
+			"name": "getImageById Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 180,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE NOT FOUND - Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE NOT FOUND - Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE NOT FOUND - Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "7aa1f84d-8419-4d92-b58f-5d7d464737dc",
+			"name": "updateImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "bb78a1dd-c7ce-4075-b316-e00e71f8fe97",
+			"name": "updateImage Not Found",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 174,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE - DOES'T EXIST or Unauthorize request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE - DOES'T EXIST or Unauthorize request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE - DOES'T EXIST or Unauthorize request": true
+				}
+			]
+		},
+		{
+			"id": "7382fc40-694b-47a2-96df-e8da649d9bd7",
+			"name": "deleteImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 204": false,
+				"IMAGE - Unauthorize request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"IMAGE - Unauthorize request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 204": false,
+					"IMAGE - Unauthorize request": true
+				}
+			]
+		},
+		{
+			"id": "6a578883-8772-4def-afb8-6d3047b2d25d",
+			"name": "deleteImages Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "98f42df9-d487-411a-9fb1-ab8d1ff2b602",
+			"name": "deleteImages Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Image not found or Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image not found or Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Image not found or Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "25b2cbe0-9760-4780-9657-3b646e918a0c",
+			"name": "createReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "780798e8-de72-49aa-b441-7c49b23f2308",
+			"name": "GetAllReservationsByUser",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "a11ea194-f610-4c87-8b75-b2f649f149be",
+			"name": "GetAllReservationsByProductId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/product/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 176,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "833135c7-d23c-4e1a-ad32-3404dea411c1",
+			"name": "GetAllReservationsByUserId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/cf748aa3-7b84-401a-8099-548bcaa4d721",
+			"time": 177,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "6825e40b-cf1b-4c1c-b74a-52333e9eb678",
+			"name": "GetAllReservations",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin",
+			"time": 175,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				175
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "80f89b28-4584-4c18-9ef5-af9986b2edd1",
+			"name": "deleteReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/664957c8-ccf0-4adc-a17f-020c76a3b41d",
+			"time": 174,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				174
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "3e2f1921-fd42-4e6c-9179-f69ae840cd32",
+			"name": "createUser",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/users",
+			"time": 180,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "d7e42bff-1aff-4638-8403-5e9666d970f3",
+			"name": "authenticate User",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/authenticate",
+			"time": 466,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				466
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "316e02be-be4f-43e6-b5c7-3bf1707fda32",
+			"name": "authenticate User",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/authenticate",
+			"time": 294,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				294
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "f8190c4d-91e4-46cc-b3b3-986ae54c1ded",
+			"name": "createCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "92374552-1130-4b53-8fad-4fe334e94634",
+			"name": "getListCategories",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 200": true,
+				"Response JSON value check": true,
+				"Response body should be an array": true,
+				"*****Response body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"*****Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 200": true,
+					"Response JSON value check": true,
+					"Response body should be an array": true,
+					"*****Response body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "bbf09edb-2cf9-4986-9dd5-33314feb1352",
+			"name": "getCategoryById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/028b1482-3fe5-419e-b4ee-3fc9eb403954",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Response body should be an object": true,
+				"Content-Type is JSON": true,
+				"Category BY ID Response body should be in the correct format": true,
+				"Category Not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category BY ID Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category Not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Response body should be an object": true,
+					"Content-Type is JSON": true,
+					"Category BY ID Response body should be in the correct format": true,
+					"Category Not found": false
+				}
+			]
+		},
+		{
+			"id": "72125d93-45cd-4c29-85e3-9780fa4b0ee3",
+			"name": "getCategoryById Set",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/085e7b9a-9b36-4772-a157-b17a76344090",
+			"time": 184,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": false,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": false,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": true
+				}
+			]
+		},
+		{
+			"id": "20fe0066-5cb1-436b-a63e-2117c5e0f2ca",
+			"name": "updateCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "69e99360-c26a-4f4b-a122-22edc586b314",
+			"name": "updateCategory Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "262583e2-4d9f-4d60-8489-630a589b19ce",
+			"name": "deleteCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/80d0c8b1-7200-495a-9983-bb3cc2ca21bc",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "3e167cef-927c-4881-92f2-2de10d5864cf",
+			"name": "deleteCategory Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/ab518caa-ce4f-4345-ac39-4462483c096d",
+			"time": 192,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"Content-Type is present": true,
+				"Status code is 404": false,
+				"Category not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Category not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"Content-Type is present": true,
+					"Status code is 404": false,
+					"Category not found": false
+				}
+			]
+		},
+		{
+			"id": "4a048915-9cdd-4b28-94f4-9b92ce5e5a6b",
+			"name": "createCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 185,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "ed35ab99-bedd-4e58-9310-d297b0d05793",
+			"name": "getListCities",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "5d18ae4b-4707-4b2d-bc85-5cd3317bd9ec",
+			"name": "getCityById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f44aa01f-55ff-4af3-9ee8-448496cef920",
+			"name": "updateCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true
+				}
+			]
+		},
+		{
+			"id": "fae2c4e7-0bcd-4588-bcde-6327645663ff",
+			"name": "deleteCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 186,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "3025ec23-0339-4ce0-bb7c-408fecbf3c7d",
+			"name": "deleteCity Set",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/1e396062-a5ba-41cd-9167-02694a013785",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "1353f820-4036-4170-adf2-50fd219e0a17",
+			"name": "deleteCity No Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 185,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "d4fdb1ca-e299-40a7-b0bd-80de4b16bb2b",
+			"name": "createFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "19026f1b-c67f-4cb7-832d-496ee66ff3c9",
+			"name": "getListFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 221,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check - FEATURE NAME": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check - FEATURE NAME": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				221
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check - FEATURE NAME": true
+				}
+			]
+		},
+		{
+			"id": "e85328d5-6e40-47dd-a62d-8110fea37140",
+			"name": "getFeatureById VER",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 186,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 200": false,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 200": false,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "59bff304-e7f2-4aa9-bc77-999a09908de3",
+			"name": "updateFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "437d13d6-0d16-46d2-bb3d-c6f43e5c1a54",
+			"name": "deleteFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/036831eb-2f6e-4a50-8e77-05d0650fa482",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 204 - NO CONTENT": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204 - NO CONTENT": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 204 - NO CONTENT": false
+				}
+			]
+		},
+		{
+			"id": "a1c7ab6e-a908-4fe5-808e-0218a35d04f1",
+			"name": "deleteFeature Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/75561ab9-dccf-40cc-97f3-0932c6f523a0",
+			"time": 187,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 404": false,
+				"Feature not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Feature not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 404": false,
+					"Feature not found": false
+				}
+			]
+		},
+		{
+			"id": "b28a8fe8-ddf4-4d56-9d90-24c93bb0eeb7",
+			"name": "createProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 185,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "b6e207d2-f9b1-4930-992a-8325cca665c3",
+			"name": "createProduct Policy",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "de36cabc-6279-4d39-a405-899ea05c4828",
+			"name": "getListProducts",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 241,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "46d3c14d-3156-4381-ae08-a6ca76b168ff",
+			"name": "getProductsById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/59556751-4e59-4868-b598-577ec9a4d712",
+			"time": 184,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "96886877-0fa7-44f7-977d-b9c17cc18e5a",
+			"name": "getProductosByCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?city=Guaymall%C3%A9n",
+			"time": 237,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Response body should be an array": true,
+				"Content-Type is JSON": true,
+				"***** Response PRODUCT BY CITY body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"***** Response PRODUCT BY CITY body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Response body should be an array": true,
+					"Content-Type is JSON": true,
+					"***** Response PRODUCT BY CITY body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "e112d5b6-6dc4-470d-8733-246d8dcc8eb1",
+			"name": "getProductosByCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?category=departamentos",
+			"time": 183,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "871ecd5f-b637-4c16-aa9b-3f21fdaa308d",
+			"name": "getProductosByDate&City",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2020-04-21&checkOut=2020-04-30&name=Medell%C3%ADn",
+			"time": 181,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "7eb5005d-4572-4d04-b7f8-4e6ca0735d2b",
+			"name": "getProductosByDate",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2019-02-20&checkOut=2019-02-21",
+			"time": 254,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				254
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "61a040be-4963-4ef1-8ab0-6a295a1d53d1",
+			"name": "updateProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "99e0c0c6-2995-4f6b-bd32-88476364fb64",
+			"name": "updateProductVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 186,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "6f4283fa-9577-4686-956a-d1a350b0113a",
+			"name": "updateProductNoVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "25e509ad-6ee6-4322-96b2-1bee8230847b",
+			"name": "updateProductNoVbles S3",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 188,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "8b3d10e8-4294-40ed-9d15-e900fe8c1f3e",
+			"name": "deleteProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "9a476d5e-078b-4239-89dd-2fd3af3493eb",
+			"name": "deleteProduct con Feature sin img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "81049ae5-1350-41d3-834e-62a99ac48f2e",
+			"name": "deleteProduct with Img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/81b2179a-5cd4-442d-94d5-d2d8c67bad04",
+			"time": 182,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "7b22f613-8227-49e0-888d-3561046500f0",
+			"name": "deleteProduct Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 180,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 404": false,
+				"Product not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Product not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 404": false,
+					"Product not found": false
+				}
+			]
+		},
+		{
+			"id": "25fc5c93-ad06-4818-969c-eecc4cae392f",
+			"name": "updateFeature Feature Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/a6e6f007-d423-41df-92c8-f930c770406f",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Feature added. Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Feature added. Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Feature added. Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "f0fc62a3-da9b-4f28-9008-90c647ae080d",
+			"name": "updateFeature NotFound",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/f878aadc-132f-4bc2-ab16-f2177e11375",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"This product don't have this feature. Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"This product don't have this feature. Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"This product don't have this feature. Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "bdd4a27d-e20c-4e1d-91e7-c25523a27adf",
+			"name": "updateFeature Unlink",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/unlink/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 187,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "63b68759-b612-47dc-8882-dd0245d68a71",
+			"name": "createImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 188,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Successful POST request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Successful POST request": false
+				}
+			]
+		},
+		{
+			"id": "2b12e534-388d-45d1-a712-44c4a0b49afa",
+			"name": "getListImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3984f49b-ee97-4e79-a331-1c63600c48bc",
+			"name": "getImageById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 193,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "274ac406-17eb-488d-ad5b-4b3164fb5516",
+			"name": "getImageById Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 188,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE NOT FOUND - Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE NOT FOUND - Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE NOT FOUND - Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "171858c5-e4d7-4e52-851d-31472843f3ed",
+			"name": "updateImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": false
+				}
+			]
+		},
+		{
+			"id": "9cc961a7-1114-450a-9a1f-ccbd17784b4b",
+			"name": "updateImage Not Found",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE - DOES'T EXIST or Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE - DOES'T EXIST or Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE - DOES'T EXIST or Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "4597bd4a-f5f3-4b25-bd1d-28d405e021a8",
+			"name": "deleteImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 183,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 204": false,
+				"IMAGE - Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"IMAGE - Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				183
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 204": false,
+					"IMAGE - Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "8a624b5d-855b-4bc6-b6b8-6deb7c3f8d27",
+			"name": "deleteImages Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 404": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 404": false
+				}
+			]
+		},
+		{
+			"id": "6a9753df-b534-4f43-875d-2c60a315489b",
+			"name": "deleteImages Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Image not found or Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image not found or Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Image not found or Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "c06c131e-2f07-4672-8435-7144a191ecfb",
+			"name": "createReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 196,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				196
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "2c2ae34d-4f12-4d8e-bb30-fe0ddd9818f6",
+			"name": "GetAllReservationsByUser",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "ac02779e-83cf-4dc4-b497-8b6fffe05153",
+			"name": "GetAllReservationsByProductId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/product/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 187,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "1e9d609c-92e1-4301-a937-2252a7906048",
+			"name": "GetAllReservationsByUserId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/cf748aa3-7b84-401a-8099-548bcaa4d721",
+			"time": 182,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				182
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "f4275c2a-b9c8-4fda-9d31-37b28cb60f13",
+			"name": "GetAllReservations",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin",
+			"time": 184,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "b6ce108d-a599-4d1f-8555-9736dbb54a18",
+			"name": "deleteReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/664957c8-ccf0-4adc-a17f-020c76a3b41d",
+			"time": 188,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "51ef7d06-f3a5-4efd-bac4-ed183a745435",
+			"name": "authenticate Admin",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/authenticate",
+			"time": 291,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				291
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "a940e878-4090-48f4-a0e1-d0d5eae2adf6",
+			"name": "createCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 191,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": false,
+				"JSON valid": false,
+				"Content-Type is present": false,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 0,
+					"fail": 1
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": false,
+					"JSON valid": false,
+					"Content-Type is present": false,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "5e3568f0-a416-49cd-9bd7-6fe34967add6",
+			"name": "getListCategories",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 184,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": true,
+				"Content-Type is present": true,
+				"Status code is 200": true,
+				"Response JSON value check": true,
+				"Response body should be an array": true,
+				"*****Response body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"*****Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				184
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": true,
+					"Content-Type is present": true,
+					"Status code is 200": true,
+					"Response JSON value check": true,
+					"Response body should be an array": true,
+					"*****Response body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "bcac5140-ca83-46ea-ac9c-35113fe4a927",
+			"name": "getCategoryById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/028b1482-3fe5-419e-b4ee-3fc9eb403954",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": true,
+				"Content-Type is present": true,
+				"Response body should be an object": true,
+				"Content-Type is JSON": true,
+				"Category BY ID Response body should be in the correct format": true,
+				"Category Not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category BY ID Response body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category Not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": true,
+					"Content-Type is present": true,
+					"Response body should be an object": true,
+					"Content-Type is JSON": true,
+					"Category BY ID Response body should be in the correct format": true,
+					"Category Not found": false
+				}
+			]
+		},
+		{
+			"id": "372cc527-2ef4-4c3c-ad34-48f6635858b4",
+			"name": "getCategoryById Not found",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/085e7b9a-9b36-4772-a157-b17a76344090",
+			"time": 189,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": false,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": false,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": true
+				}
+			]
+		},
+		{
+			"id": "a33a8f38-926b-4757-aa94-ebf4770d2cac",
+			"name": "updateCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 197,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": false,
+				"Content-Type is present": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				197
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": false,
+					"Content-Type is present": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "128331d4-12f3-4c76-818c-42b0e445d2fd",
+			"name": "updateCategory Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories",
+			"time": 195,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": false,
+				"JSON valid": false,
+				"Content-Type is present": false,
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 0,
+					"fail": 1
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				195
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": false,
+					"JSON valid": false,
+					"Content-Type is present": false,
+					"Successful PUT request": true
+				}
+			]
+		},
+		{
+			"id": "5f2d22ef-512b-4512-b172-80adccf63e7f",
+			"name": "deleteCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/0250a477-dc2c-46dc-a2a7-822d0daa529e",
+			"time": 224,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": false,
+				"Content-Type is present": true,
+				"CATEGORY - Status Code": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY - Status Code": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				224
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": false,
+					"Content-Type is present": true,
+					"CATEGORY - Status Code": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "3b5e1da2-e62d-4109-b607-3fc01a8682e9",
+			"name": "deleteCategory Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/categories/ab518caa-ce4f-4345-ac39-4462483c096d",
+			"time": 190,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CATEGORY Successful request": true,
+				"Payload must be valid and have a body": true,
+				"JSON valid": false,
+				"Content-Type is present": true,
+				"Status code is 404": true,
+				"Category not found": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CATEGORY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payload must be valid and have a body": {
+					"pass": 1,
+					"fail": 0
+				},
+				"JSON valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Category not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CATEGORY Successful request": true,
+					"Payload must be valid and have a body": true,
+					"JSON valid": false,
+					"Content-Type is present": true,
+					"Status code is 404": true,
+					"Category not found": true
+				}
+			]
+		},
+		{
+			"id": "9dbaab77-516a-474a-b286-77ae2b747d12",
+			"name": "createCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 190,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "8fa12abe-c705-4225-aa26-fb85bc14e3de",
+			"name": "getListCities",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "82ac2af8-28a4-446a-b1a8-c2f335464d24",
+			"name": "getCityById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 186,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				186
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d2a44344-4263-456a-a0b8-16aa705427b6",
+			"name": "updateCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities",
+			"time": 191,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true
+				}
+			]
+		},
+		{
+			"id": "c1c58c7b-dc9c-4ecd-bb15-bef24734566c",
+			"name": "deleteCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 237,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"CITY Successful request": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"CITY Successful request": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "53bd06d7-4398-4890-abef-44ab3f0e5092",
+			"name": "deleteCity Set",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/46d88b8a-98d0-444e-8163-185a56d7b56e",
+			"time": 190,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "94f5bb9d-0861-46a7-93f4-8c52d5b71952",
+			"name": "deleteCity No Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/cities/47c12265-ebb2-4ede-bad4-ff2c7f1d69af",
+			"time": 235,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"CITY Successful request": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"CITY Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				235
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"CITY Successful request": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "65d9e938-8bd9-466c-80a8-2d1ef0466d8e",
+			"name": "createFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 192,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "f709599f-859d-49c8-a9e8-eecaa21072f9",
+			"name": "getListFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 219,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"FEATURE Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check - FEATURE NAME": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check - FEATURE NAME": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				219
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"FEATURE Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check - FEATURE NAME": true
+				}
+			]
+		},
+		{
+			"id": "67500bda-6a59-4581-a65d-c8466ac9f977",
+			"name": "getFeatureById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 193,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "eee862f1-cbcf-4134-9075-dba41fef1783",
+			"name": "updateFeature",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features",
+			"time": 189,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "e4fd2723-23df-4114-a73e-ec47609ef9ed",
+			"name": "deleteFeatures",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 193,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 204 - NO CONTENT": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204 - NO CONTENT": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 204 - NO CONTENT": false
+				}
+			]
+		},
+		{
+			"id": "30223106-988c-4220-9579-cfb8beaaffcb",
+			"name": "deleteFeature Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/features/75561ab9-dccf-40cc-97f3-0932c6f523a0",
+			"time": 190,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"FEATURE Successful request": true,
+				"Status code is 404": true,
+				"Feature not found": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"FEATURE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Feature not found": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"FEATURE Successful request": true,
+					"Status code is 404": true,
+					"Feature not found": true
+				}
+			]
+		},
+		{
+			"id": "bfbe38ec-bf6d-47e2-a94c-450dc762c51e",
+			"name": "createProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "5f17e594-abed-4127-8029-697eff82760f",
+			"name": "createProduct Policy",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 207,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				207
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "93b996ff-a89e-40ed-bc81-951911b1c8d1",
+			"name": "getListProducts",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 248,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Status code is 200": true,
+				"Response JSON value check": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response JSON value check": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				248
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Status code is 200": true,
+					"Response JSON value check": true
+				}
+			]
+		},
+		{
+			"id": "9e9654dd-81d8-4676-b700-21e929cd20c6",
+			"name": "getProductsById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/59556751-4e59-4868-b598-577ec9a4d712",
+			"time": 185,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "724722a6-9799-4fec-8109-6f4cdac5eb4e",
+			"name": "getProductosByCity",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?city=Guaymall%C3%A9n",
+			"time": 233,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Response body should be an array": true,
+				"Content-Type is JSON": true,
+				"***** Response PRODUCT BY CITY body should be in the correct format": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body should be an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"***** Response PRODUCT BY CITY body should be in the correct format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				233
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Response body should be an array": true,
+					"Content-Type is JSON": true,
+					"***** Response PRODUCT BY CITY body should be in the correct format": true
+				}
+			]
+		},
+		{
+			"id": "e37aecea-de08-4df4-97f4-441f1d11170d",
+			"name": "getProductosByCategory",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products?category=departamentos",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "5367e035-5283-4436-b825-52fe90d1aeed",
+			"name": "getProductosByDate&City",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2020-04-21&checkOut=2020-04-30&name=Medell%C3%ADn",
+			"time": 180,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				180
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "f1176c38-4479-4cb0-bd26-3b12d1496922",
+			"name": "getProductosByDate",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/?checkIn=2019-02-20&checkOut=2019-02-21",
+			"time": 240,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				240
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "93e54a97-1726-4c1e-9d38-8fd75a8d49ef",
+			"name": "updateProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 193,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": false,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": false,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "507fd299-5210-4a79-9fc6-854fe0a01415",
+			"name": "updateProductVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 362,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": false,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				362
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": false,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "101ec6a9-d686-4384-bab3-0b8953079480",
+			"name": "updateProductNoVbles",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 417,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Successful PUT request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful PUT request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				417
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Successful PUT request": true
+				}
+			]
+		},
+		{
+			"id": "2039483c-114e-43dc-b957-05b731bea2f0",
+			"name": "updateProductNoVbles S3",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products",
+			"time": 195,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": false,
+				"Successful PUT request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Successful PUT request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				195
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": false,
+					"Successful PUT request": false
+				}
+			]
+		},
+		{
+			"id": "1acaf642-889b-4af1-aca4-ff967dfc046b",
+			"name": "deleteProduct",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 364,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				364
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "1b8bb0a0-88b7-49b9-8e72-52862aca0b07",
+			"name": "deleteProduct con Feature sin img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/c183aa47-175d-4a41-ab08-6969000e8656",
+			"time": 194,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				194
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "2a807571-6feb-4ae7-b603-9d201c117305",
+			"name": "deleteProduct with Img",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/81b2179a-5cd4-442d-94d5-d2d8c67bad04",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "78390d62-73e5-40ad-b3f1-96fac00f8db5",
+			"name": "deleteProduct Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 179,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Status code is 404": false,
+				"Product not found": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Product not found": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Status code is 404": false,
+					"Product not found": false
+				}
+			]
+		},
+		{
+			"id": "8dd99384-a1a8-4ec0-a2c3-e281ef8f7867",
+			"name": "updateFeature Feature Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/a6e6f007-d423-41df-92c8-f930c770406f",
+			"time": 188,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"Feature added. Status code is 204": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Feature added. Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"Feature added. Status code is 204": false
+				}
+			]
+		},
+		{
+			"id": "8eaaaca8-1738-4b8c-87cb-70dde2818223",
+			"name": "updateFeature NotFound",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/link/f878aadc-132f-4bc2-ab16-f2177e11375",
+			"time": 189,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true,
+				"This product don't have this feature. Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"This product don't have this feature. Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true,
+					"This product don't have this feature. Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "8960f0d7-5c44-4a71-8d92-8214a23e8779",
+			"name": "updateFeature Unlink",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/products/4318251c-d6db-4311-9f2f-88d5f60bf71a/unlink/54253343-66fc-42f1-ab3c-e3eef1a963bc",
+			"time": 189,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"PRODUCT Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"PRODUCT Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"PRODUCT Successful request": true
+				}
+			]
+		},
+		{
+			"id": "52d335c4-1a34-41e6-9d6b-7224a92497bf",
+			"name": "createImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 193,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Successful POST request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Successful POST request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Successful POST request": true
+				}
+			]
+		},
+		{
+			"id": "bb95cf92-bb01-48f4-bac0-69a0681f2147",
+			"name": "getListImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 190,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8d959f3d-fda9-4e28-bab3-22de1d242217",
+			"name": "getImageById",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 191,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "670c0854-6269-4e6e-a023-87c8c02e0786",
+			"name": "getImageById Not Exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 192,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE NOT FOUND - Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE NOT FOUND - Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				192
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE NOT FOUND - Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "26e78ecc-8a64-4aec-bc0a-341d2dfd4494",
+			"name": "updateImage",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 190,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "58b3938d-62ae-4b07-8489-2586c4113861",
+			"name": "updateImage Not Found",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images",
+			"time": 191,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"IMAGE - DOES'T EXIST or Unauthorize request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE - DOES'T EXIST or Unauthorize request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"IMAGE - DOES'T EXIST or Unauthorize request": true
+				}
+			]
+		},
+		{
+			"id": "26488723-1c1a-42e6-a4de-21e156b133f2",
+			"name": "deleteImages",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 189,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 204": false,
+				"IMAGE - Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 204": {
+					"pass": 0,
+					"fail": 1
+				},
+				"IMAGE - Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				189
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 204": false,
+					"IMAGE - Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "66a69735-3df4-4e5d-aadb-6acebb0b1a66",
+			"name": "deleteImages Asoc",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 191,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				191
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Status code is 404": true
+				}
+			]
+		},
+		{
+			"id": "38465b1f-9928-406f-84c0-a471abe47a8f",
+			"name": "deleteImages Not exist",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/images/d2e589fe-913e-4872-8141-b70050b038c3",
+			"time": 188,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"IMAGE Successful request": true,
+				"Image not found or Unauthorize request": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"IMAGE Successful request": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Image not found or Unauthorize request": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"IMAGE Successful request": true,
+					"Image not found or Unauthorize request": false
+				}
+			]
+		},
+		{
+			"id": "1e750711-b4d7-49d0-9447-0461fa1a5df3",
+			"name": "createReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 185,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "11fe96d3-a1da-4aa9-a11a-128cbaa647a9",
+			"name": "GetAllReservationsByUser",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "dab535db-25e8-4dd4-af64-b29d9297c6a8",
+			"name": "GetAllReservationsByProductId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/product/57bb7c61-f07b-4102-b98d-de396d83e04d",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "873acc0b-f2a3-4c86-92cf-a37d12f6bd5b",
+			"name": "GetAllReservationsByUserId",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin/cf748aa3-7b84-401a-8099-548bcaa4d721",
+			"time": 185,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				185
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "3da67d9d-c256-437e-b4d6-02e44b5d6bae",
+			"name": "GetAllReservations",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/admin",
+			"time": 202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				202
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "1a667901-cf15-4a1e-bc76-b8667c855b93",
+			"name": "deleteReservation",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/reservations/664957c8-ccf0-4adc-a17f-020c76a3b41d",
+			"time": 190,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response time is less than 200ms": true,
+				"RESERVE Successful request": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"RESERVE Successful request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				190
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true,
+					"RESERVE Successful request": true
+				}
+			]
+		},
+		{
+			"id": "890449cd-09da-446e-b6ae-384214caab22",
+			"name": "createUser",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/users",
+			"time": 181,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				181
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "d6d85979-ed9f-400a-852c-a05287583baa",
+			"name": "authenticate User",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/authenticate",
+			"time": 483,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				483
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false
+				}
+			]
+		},
+		{
+			"id": "a5577631-bcfa-40db-9df4-b553d140781a",
+			"name": "authenticate Admin",
+			"url": "http://ec2-18-233-111-51.compute-1.amazonaws.com/authenticate",
+			"time": 294,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 200ms": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 200ms": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				294
+			],
+			"allTests": [
+				{
+					"Response time is less than 200ms": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 34087,
+	"collection": {
+		"requests": [
+			{
+				"id": "ddc0b90b-863d-4bbf-b15e-128cf54019de",
+				"method": "POST"
+			},
+			{
+				"id": "80b5ba79-a889-41d1-80f2-a9938ac5f203",
+				"method": "GET"
+			},
+			{
+				"id": "7bc2629a-686e-481d-a291-69bc425cc881",
+				"method": "GET"
+			},
+			{
+				"id": "b57d2994-457e-4dd3-b630-fe28ccb696c9",
+				"method": "GET"
+			},
+			{
+				"id": "ef700f01-cf58-4294-b724-a79bc52fa481",
+				"method": "PUT"
+			},
+			{
+				"id": "1d90b4a3-2f03-42f9-9b42-638aff25b696",
+				"method": "PUT"
+			},
+			{
+				"id": "f6a660b0-5155-455b-b113-20be7d3a1382",
+				"method": "DELETE"
+			},
+			{
+				"id": "749a4f24-fd3b-43e2-9490-e30d9516ca72",
+				"method": "DELETE"
+			},
+			{
+				"id": "451e8f71-29a7-4332-b8d8-15edb2b34352",
+				"method": "POST"
+			},
+			{
+				"id": "9fd9cc0d-2be7-4b10-8f59-5beec3097468",
+				"method": "GET"
+			},
+			{
+				"id": "b8193570-0e0d-4b65-ba9c-a4ad5da96463",
+				"method": "GET"
+			},
+			{
+				"id": "44aee30f-363b-49e3-86d8-63e29caffb6a",
+				"method": "PUT"
+			},
+			{
+				"id": "0772c2f2-3172-4ced-b613-197396c184ee",
+				"method": "DELETE"
+			},
+			{
+				"id": "43b10a66-6060-471e-8bdb-e34b72de8250",
+				"method": "DELETE"
+			},
+			{
+				"id": "4fafd8fb-f510-4268-a464-b8d309d055a6",
+				"method": "DELETE"
+			},
+			{
+				"id": "f4b4caf1-0fd8-4937-985f-de3127d05503",
+				"method": "POST"
+			},
+			{
+				"id": "41ae4bfb-8ba5-4029-abf5-e0ce1686165c",
+				"method": "GET"
+			},
+			{
+				"id": "516c5714-2c70-4ed1-8f6f-2da7c8e27055",
+				"method": "GET"
+			},
+			{
+				"id": "37af96cb-8e55-4e38-b1be-d12111a2d822",
+				"method": "PUT"
+			},
+			{
+				"id": "69b4db57-68f8-4f7d-a730-cad7a36f7c32",
+				"method": "DELETE"
+			},
+			{
+				"id": "e4650132-484b-4250-8df4-61618cdb4ff6",
+				"method": "DELETE"
+			},
+			{
+				"id": "a3654ab5-10d3-4925-8cb3-f320e4e23dde",
+				"method": "POST"
+			},
+			{
+				"id": "65c6c101-d3e4-452d-a6c3-a5bf59db3779",
+				"method": "POST"
+			},
+			{
+				"id": "b9458305-3daa-4d33-804a-c6f232a00733",
+				"method": "GET"
+			},
+			{
+				"id": "e8b3c196-4ec0-41f6-b1eb-3cfba914b68a",
+				"method": "GET"
+			},
+			{
+				"id": "5e8b71a6-b030-4dda-b3b6-f6fb40976f54",
+				"method": "GET"
+			},
+			{
+				"id": "d30be0ce-ab7d-43b3-b1a5-b81c5668787d",
+				"method": "GET"
+			},
+			{
+				"id": "c543746b-8aff-43a5-b5f4-32de8243a778",
+				"method": "GET"
+			},
+			{
+				"id": "d1f1126d-acc9-4130-8e39-3a4604500fc4",
+				"method": "GET"
+			},
+			{
+				"id": "33a43d4b-1aba-46e1-80fc-34ed928d9874",
+				"method": "PUT"
+			},
+			{
+				"id": "d9563a1c-275c-4d3c-8ef7-631f58d4ed08",
+				"method": "PUT"
+			},
+			{
+				"id": "75917802-58b5-4046-a90c-1432fdd485ad",
+				"method": "PUT"
+			},
+			{
+				"id": "274fe584-55e3-4d24-a173-149f798a878e",
+				"method": "PUT"
+			},
+			{
+				"id": "c8edf775-28f9-469f-8c0d-00314fabe8ab",
+				"method": "DELETE"
+			},
+			{
+				"id": "a0b88c3e-584d-4c51-b853-d472e07c7fbb",
+				"method": "DELETE"
+			},
+			{
+				"id": "e26cb386-2cd6-448f-88f9-f4282d0c8e45",
+				"method": "DELETE"
+			},
+			{
+				"id": "387fd744-fd7b-44e8-9e53-04552dfe47ac",
+				"method": "DELETE"
+			},
+			{
+				"id": "ef30b515-633c-404c-bb14-675b2405cea5",
+				"method": "PATCH"
+			},
+			{
+				"id": "8480c583-7c34-46db-a513-6709ce438378",
+				"method": "PATCH"
+			},
+			{
+				"id": "720fa5b2-80c9-4abc-8fc7-44631fb4843b",
+				"method": "PATCH"
+			},
+			{
+				"id": "298c1dc3-0e4b-467e-b196-a58aae41e794",
+				"method": "POST"
+			},
+			{
+				"id": "d802d79c-0b39-4d7f-b7c6-5de67170b879",
+				"method": "GET"
+			},
+			{
+				"id": "f7b1f151-8757-40e9-aa42-df9505979eb2",
+				"method": "GET"
+			},
+			{
+				"id": "962d6c69-6c2b-4297-b1b9-a6b29dd177e1",
+				"method": "GET"
+			},
+			{
+				"id": "7aa1f84d-8419-4d92-b58f-5d7d464737dc",
+				"method": "PUT"
+			},
+			{
+				"id": "bb78a1dd-c7ce-4075-b316-e00e71f8fe97",
+				"method": "PUT"
+			},
+			{
+				"id": "7382fc40-694b-47a2-96df-e8da649d9bd7",
+				"method": "DELETE"
+			},
+			{
+				"id": "6a578883-8772-4def-afb8-6d3047b2d25d",
+				"method": "DELETE"
+			},
+			{
+				"id": "98f42df9-d487-411a-9fb1-ab8d1ff2b602",
+				"method": "DELETE"
+			},
+			{
+				"id": "25b2cbe0-9760-4780-9657-3b646e918a0c",
+				"method": "POST"
+			},
+			{
+				"id": "780798e8-de72-49aa-b441-7c49b23f2308",
+				"method": "GET"
+			},
+			{
+				"id": "a11ea194-f610-4c87-8b75-b2f649f149be",
+				"method": "GET"
+			},
+			{
+				"id": "833135c7-d23c-4e1a-ad32-3404dea411c1",
+				"method": "GET"
+			},
+			{
+				"id": "6825e40b-cf1b-4c1c-b74a-52333e9eb678",
+				"method": "GET"
+			},
+			{
+				"id": "80f89b28-4584-4c18-9ef5-af9986b2edd1",
+				"method": "DELETE"
+			},
+			{
+				"id": "3e2f1921-fd42-4e6c-9179-f69ae840cd32",
+				"method": "POST"
+			},
+			{
+				"id": "d7e42bff-1aff-4638-8403-5e9666d970f3",
+				"method": "POST"
+			},
+			{
+				"id": "316e02be-be4f-43e6-b5c7-3bf1707fda32",
+				"method": "POST"
+			},
+			{
+				"id": "f8190c4d-91e4-46cc-b3b3-986ae54c1ded",
+				"method": "POST"
+			},
+			{
+				"id": "92374552-1130-4b53-8fad-4fe334e94634",
+				"method": "GET"
+			},
+			{
+				"id": "bbf09edb-2cf9-4986-9dd5-33314feb1352",
+				"method": "GET"
+			},
+			{
+				"id": "72125d93-45cd-4c29-85e3-9780fa4b0ee3",
+				"method": "GET"
+			},
+			{
+				"id": "20fe0066-5cb1-436b-a63e-2117c5e0f2ca",
+				"method": "PUT"
+			},
+			{
+				"id": "69e99360-c26a-4f4b-a122-22edc586b314",
+				"method": "PUT"
+			},
+			{
+				"id": "262583e2-4d9f-4d60-8489-630a589b19ce",
+				"method": "DELETE"
+			},
+			{
+				"id": "3e167cef-927c-4881-92f2-2de10d5864cf",
+				"method": "DELETE"
+			},
+			{
+				"id": "4a048915-9cdd-4b28-94f4-9b92ce5e5a6b",
+				"method": "POST"
+			},
+			{
+				"id": "ed35ab99-bedd-4e58-9310-d297b0d05793",
+				"method": "GET"
+			},
+			{
+				"id": "5d18ae4b-4707-4b2d-bc85-5cd3317bd9ec",
+				"method": "GET"
+			},
+			{
+				"id": "f44aa01f-55ff-4af3-9ee8-448496cef920",
+				"method": "PUT"
+			},
+			{
+				"id": "fae2c4e7-0bcd-4588-bcde-6327645663ff",
+				"method": "DELETE"
+			},
+			{
+				"id": "3025ec23-0339-4ce0-bb7c-408fecbf3c7d",
+				"method": "DELETE"
+			},
+			{
+				"id": "1353f820-4036-4170-adf2-50fd219e0a17",
+				"method": "DELETE"
+			},
+			{
+				"id": "d4fdb1ca-e299-40a7-b0bd-80de4b16bb2b",
+				"method": "POST"
+			},
+			{
+				"id": "19026f1b-c67f-4cb7-832d-496ee66ff3c9",
+				"method": "GET"
+			},
+			{
+				"id": "e85328d5-6e40-47dd-a62d-8110fea37140",
+				"method": "GET"
+			},
+			{
+				"id": "59bff304-e7f2-4aa9-bc77-999a09908de3",
+				"method": "PUT"
+			},
+			{
+				"id": "437d13d6-0d16-46d2-bb3d-c6f43e5c1a54",
+				"method": "DELETE"
+			},
+			{
+				"id": "a1c7ab6e-a908-4fe5-808e-0218a35d04f1",
+				"method": "DELETE"
+			},
+			{
+				"id": "b28a8fe8-ddf4-4d56-9d90-24c93bb0eeb7",
+				"method": "POST"
+			},
+			{
+				"id": "b6e207d2-f9b1-4930-992a-8325cca665c3",
+				"method": "POST"
+			},
+			{
+				"id": "de36cabc-6279-4d39-a405-899ea05c4828",
+				"method": "GET"
+			},
+			{
+				"id": "46d3c14d-3156-4381-ae08-a6ca76b168ff",
+				"method": "GET"
+			},
+			{
+				"id": "96886877-0fa7-44f7-977d-b9c17cc18e5a",
+				"method": "GET"
+			},
+			{
+				"id": "e112d5b6-6dc4-470d-8733-246d8dcc8eb1",
+				"method": "GET"
+			},
+			{
+				"id": "871ecd5f-b637-4c16-aa9b-3f21fdaa308d",
+				"method": "GET"
+			},
+			{
+				"id": "7eb5005d-4572-4d04-b7f8-4e6ca0735d2b",
+				"method": "GET"
+			},
+			{
+				"id": "61a040be-4963-4ef1-8ab0-6a295a1d53d1",
+				"method": "PUT"
+			},
+			{
+				"id": "99e0c0c6-2995-4f6b-bd32-88476364fb64",
+				"method": "PUT"
+			},
+			{
+				"id": "6f4283fa-9577-4686-956a-d1a350b0113a",
+				"method": "PUT"
+			},
+			{
+				"id": "25e509ad-6ee6-4322-96b2-1bee8230847b",
+				"method": "PUT"
+			},
+			{
+				"id": "8b3d10e8-4294-40ed-9d15-e900fe8c1f3e",
+				"method": "DELETE"
+			},
+			{
+				"id": "9a476d5e-078b-4239-89dd-2fd3af3493eb",
+				"method": "DELETE"
+			},
+			{
+				"id": "81049ae5-1350-41d3-834e-62a99ac48f2e",
+				"method": "DELETE"
+			},
+			{
+				"id": "7b22f613-8227-49e0-888d-3561046500f0",
+				"method": "DELETE"
+			},
+			{
+				"id": "25fc5c93-ad06-4818-969c-eecc4cae392f",
+				"method": "PATCH"
+			},
+			{
+				"id": "f0fc62a3-da9b-4f28-9008-90c647ae080d",
+				"method": "PATCH"
+			},
+			{
+				"id": "bdd4a27d-e20c-4e1d-91e7-c25523a27adf",
+				"method": "PATCH"
+			},
+			{
+				"id": "63b68759-b612-47dc-8882-dd0245d68a71",
+				"method": "POST"
+			},
+			{
+				"id": "2b12e534-388d-45d1-a712-44c4a0b49afa",
+				"method": "GET"
+			},
+			{
+				"id": "3984f49b-ee97-4e79-a331-1c63600c48bc",
+				"method": "GET"
+			},
+			{
+				"id": "274ac406-17eb-488d-ad5b-4b3164fb5516",
+				"method": "GET"
+			},
+			{
+				"id": "171858c5-e4d7-4e52-851d-31472843f3ed",
+				"method": "PUT"
+			},
+			{
+				"id": "9cc961a7-1114-450a-9a1f-ccbd17784b4b",
+				"method": "PUT"
+			},
+			{
+				"id": "4597bd4a-f5f3-4b25-bd1d-28d405e021a8",
+				"method": "DELETE"
+			},
+			{
+				"id": "8a624b5d-855b-4bc6-b6b8-6deb7c3f8d27",
+				"method": "DELETE"
+			},
+			{
+				"id": "6a9753df-b534-4f43-875d-2c60a315489b",
+				"method": "DELETE"
+			},
+			{
+				"id": "c06c131e-2f07-4672-8435-7144a191ecfb",
+				"method": "POST"
+			},
+			{
+				"id": "2c2ae34d-4f12-4d8e-bb30-fe0ddd9818f6",
+				"method": "GET"
+			},
+			{
+				"id": "ac02779e-83cf-4dc4-b497-8b6fffe05153",
+				"method": "GET"
+			},
+			{
+				"id": "1e9d609c-92e1-4301-a937-2252a7906048",
+				"method": "GET"
+			},
+			{
+				"id": "f4275c2a-b9c8-4fda-9d31-37b28cb60f13",
+				"method": "GET"
+			},
+			{
+				"id": "b6ce108d-a599-4d1f-8555-9736dbb54a18",
+				"method": "DELETE"
+			},
+			{
+				"id": "51ef7d06-f3a5-4efd-bac4-ed183a745435",
+				"method": "POST"
+			},
+			{
+				"id": "a940e878-4090-48f4-a0e1-d0d5eae2adf6",
+				"method": "POST"
+			},
+			{
+				"id": "5e3568f0-a416-49cd-9bd7-6fe34967add6",
+				"method": "GET"
+			},
+			{
+				"id": "bcac5140-ca83-46ea-ac9c-35113fe4a927",
+				"method": "GET"
+			},
+			{
+				"id": "372cc527-2ef4-4c3c-ad34-48f6635858b4",
+				"method": "GET"
+			},
+			{
+				"id": "a33a8f38-926b-4757-aa94-ebf4770d2cac",
+				"method": "PUT"
+			},
+			{
+				"id": "128331d4-12f3-4c76-818c-42b0e445d2fd",
+				"method": "PUT"
+			},
+			{
+				"id": "5f2d22ef-512b-4512-b172-80adccf63e7f",
+				"method": "DELETE"
+			},
+			{
+				"id": "3b5e1da2-e62d-4109-b607-3fc01a8682e9",
+				"method": "DELETE"
+			},
+			{
+				"id": "9dbaab77-516a-474a-b286-77ae2b747d12",
+				"method": "POST"
+			},
+			{
+				"id": "8fa12abe-c705-4225-aa26-fb85bc14e3de",
+				"method": "GET"
+			},
+			{
+				"id": "82ac2af8-28a4-446a-b1a8-c2f335464d24",
+				"method": "GET"
+			},
+			{
+				"id": "d2a44344-4263-456a-a0b8-16aa705427b6",
+				"method": "PUT"
+			},
+			{
+				"id": "c1c58c7b-dc9c-4ecd-bb15-bef24734566c",
+				"method": "DELETE"
+			},
+			{
+				"id": "53bd06d7-4398-4890-abef-44ab3f0e5092",
+				"method": "DELETE"
+			},
+			{
+				"id": "94f5bb9d-0861-46a7-93f4-8c52d5b71952",
+				"method": "DELETE"
+			},
+			{
+				"id": "65d9e938-8bd9-466c-80a8-2d1ef0466d8e",
+				"method": "POST"
+			},
+			{
+				"id": "f709599f-859d-49c8-a9e8-eecaa21072f9",
+				"method": "GET"
+			},
+			{
+				"id": "67500bda-6a59-4581-a65d-c8466ac9f977",
+				"method": "GET"
+			},
+			{
+				"id": "eee862f1-cbcf-4134-9075-dba41fef1783",
+				"method": "PUT"
+			},
+			{
+				"id": "e4fd2723-23df-4114-a73e-ec47609ef9ed",
+				"method": "DELETE"
+			},
+			{
+				"id": "30223106-988c-4220-9579-cfb8beaaffcb",
+				"method": "DELETE"
+			},
+			{
+				"id": "bfbe38ec-bf6d-47e2-a94c-450dc762c51e",
+				"method": "POST"
+			},
+			{
+				"id": "5f17e594-abed-4127-8029-697eff82760f",
+				"method": "POST"
+			},
+			{
+				"id": "93b996ff-a89e-40ed-bc81-951911b1c8d1",
+				"method": "GET"
+			},
+			{
+				"id": "9e9654dd-81d8-4676-b700-21e929cd20c6",
+				"method": "GET"
+			},
+			{
+				"id": "724722a6-9799-4fec-8109-6f4cdac5eb4e",
+				"method": "GET"
+			},
+			{
+				"id": "e37aecea-de08-4df4-97f4-441f1d11170d",
+				"method": "GET"
+			},
+			{
+				"id": "5367e035-5283-4436-b825-52fe90d1aeed",
+				"method": "GET"
+			},
+			{
+				"id": "f1176c38-4479-4cb0-bd26-3b12d1496922",
+				"method": "GET"
+			},
+			{
+				"id": "93e54a97-1726-4c1e-9d38-8fd75a8d49ef",
+				"method": "PUT"
+			},
+			{
+				"id": "507fd299-5210-4a79-9fc6-854fe0a01415",
+				"method": "PUT"
+			},
+			{
+				"id": "101ec6a9-d686-4384-bab3-0b8953079480",
+				"method": "PUT"
+			},
+			{
+				"id": "2039483c-114e-43dc-b957-05b731bea2f0",
+				"method": "PUT"
+			},
+			{
+				"id": "1acaf642-889b-4af1-aca4-ff967dfc046b",
+				"method": "DELETE"
+			},
+			{
+				"id": "1b8bb0a0-88b7-49b9-8e72-52862aca0b07",
+				"method": "DELETE"
+			},
+			{
+				"id": "2a807571-6feb-4ae7-b603-9d201c117305",
+				"method": "DELETE"
+			},
+			{
+				"id": "78390d62-73e5-40ad-b3f1-96fac00f8db5",
+				"method": "DELETE"
+			},
+			{
+				"id": "8dd99384-a1a8-4ec0-a2c3-e281ef8f7867",
+				"method": "PATCH"
+			},
+			{
+				"id": "8eaaaca8-1738-4b8c-87cb-70dde2818223",
+				"method": "PATCH"
+			},
+			{
+				"id": "8960f0d7-5c44-4a71-8d92-8214a23e8779",
+				"method": "PATCH"
+			},
+			{
+				"id": "52d335c4-1a34-41e6-9d6b-7224a92497bf",
+				"method": "POST"
+			},
+			{
+				"id": "bb95cf92-bb01-48f4-bac0-69a0681f2147",
+				"method": "GET"
+			},
+			{
+				"id": "8d959f3d-fda9-4e28-bab3-22de1d242217",
+				"method": "GET"
+			},
+			{
+				"id": "670c0854-6269-4e6e-a023-87c8c02e0786",
+				"method": "GET"
+			},
+			{
+				"id": "26e78ecc-8a64-4aec-bc0a-341d2dfd4494",
+				"method": "PUT"
+			},
+			{
+				"id": "58b3938d-62ae-4b07-8489-2586c4113861",
+				"method": "PUT"
+			},
+			{
+				"id": "26488723-1c1a-42e6-a4de-21e156b133f2",
+				"method": "DELETE"
+			},
+			{
+				"id": "66a69735-3df4-4e5d-aadb-6acebb0b1a66",
+				"method": "DELETE"
+			},
+			{
+				"id": "38465b1f-9928-406f-84c0-a471abe47a8f",
+				"method": "DELETE"
+			},
+			{
+				"id": "1e750711-b4d7-49d0-9447-0461fa1a5df3",
+				"method": "POST"
+			},
+			{
+				"id": "11fe96d3-a1da-4aa9-a11a-128cbaa647a9",
+				"method": "GET"
+			},
+			{
+				"id": "dab535db-25e8-4dd4-af64-b29d9297c6a8",
+				"method": "GET"
+			},
+			{
+				"id": "873acc0b-f2a3-4c86-92cf-a37d12f6bd5b",
+				"method": "GET"
+			},
+			{
+				"id": "3da67d9d-c256-437e-b4d6-02e44b5d6bae",
+				"method": "GET"
+			},
+			{
+				"id": "1a667901-cf15-4a1e-bc76-b8667c855b93",
+				"method": "DELETE"
+			},
+			{
+				"id": "890449cd-09da-446e-b6ae-384214caab22",
+				"method": "POST"
+			},
+			{
+				"id": "d6d85979-ed9f-400a-852c-a05287583baa",
+				"method": "POST"
+			},
+			{
+				"id": "a5577631-bcfa-40db-9df4-b553d140781a",
+				"method": "POST"
+			}
+		]
+	}
+}
